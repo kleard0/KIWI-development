@@ -7,3 +7,34 @@ header{
     width: 100%;
     background-color: black;
 }
+.head_bar{
+    display: flex;
+    height: 70px;
+    width: 100%;
+}
+
+.logo_container{
+    width: 20%;
+    height: 100%;
+}
+.head_bar .logo_container img{
+    height: 100%;
+    width: auto;
+}
+.navbar{
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navbar li{
+    list-style: none;
+    text-align: center;
+    padding: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+
+}
