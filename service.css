@@ -1,0 +1,71 @@
+.service{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.service_title{
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5vw;
+}
+.service h2{
+    text-align: center;
+    margin-top: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.9vw;
+}
+.service .container{
+    display: flex;
+    flex-direction: row;
+    height: 45vh;
+    width: 85%;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+
+}
+
+.service .container .box{
+    width: 30%;
+    height: 100%;
+    background: rgba( 0, 0, 0, 1 );
+    -webkit-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.83); 
+    box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.83);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service .container .box h1{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.7vw;
+    text-align: center;
+    margin-top: 15px;
+}
+.service .container .box img{
+    height: auto;
+    width: 60px;
+    margin-top: 30px;
+}
+.service .container .box p{
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1vw;
+    margin-top: 30px;
+    line-height: 25px;
+}
+
