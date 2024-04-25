@@ -3,17 +3,31 @@
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 4vw;
-  margin: auto;
+  font-size: 7.5vw;
+  margin-top: 25vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 svg {
   height: 50px;
   width: 50px;
   position: fixed;
-  bottom: 5px;
+  bottom: 15px;
   left: 50%;
   transition: all 0.1s ease-in-out;
+  animation: rebond 0.4s ease-in-out alternate infinite;
+}
+
+@keyframes rebond {
+  from {
+    bottom: 15px;
+    left: 50%;
+  }
+  to {
+    bottom: 5px;
+    left: 50%;
+  }
 }
 
 section {
