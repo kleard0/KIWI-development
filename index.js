@@ -26,13 +26,13 @@ gsap.registerPlugin(ScrollTrigger);
 selections.forEach((selection) => {
   //on créer l'animation
   gsap.from(selection.chars, {
-    color: "wheat", //on
+    color: "wheat", //on part de la couleur "wheat"
     stagger: 0.05, // petit décalage
     scrollTrigger: {
       trigger: selection.el, //selectionner chaque élément de la liste
       start: "top 98%",
       end: "bottom 98%",
-      scrub: 1,
+      scrub: 1, // L'animation se fini lorsque le scroll a atteint le "end"
     },
   });
 });
