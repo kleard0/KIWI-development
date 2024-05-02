@@ -16,25 +16,19 @@ window.addEventListener("scroll", function (e) {
   observer.observe(resumeHearder);
 });
 
-const selections = Splitting();
-
-console.log(selections);
+const selection = Splitting();
 
 gsap.registerPlugin(ScrollTrigger);
 
-// On fait une boucle qui parcour toute la liste dans "selections"
-selections.forEach((selection) => {
-  //on créer l'animation
-  gsap.from(selection.chars, {
-    color: "wheat", //on part de la couleur "wheat"
-    stagger: 0.05, // petit décalage
-    scrollTrigger: {
-      trigger: selection.el, //selectionner chaque élément de la liste
-      start: "top 98%",
-      end: "bottom 100%",
-      scrub: 1, // L'animation se fini lorsque le scroll a atteint le "end"
-    },
-  });
+gsap.from(selection[0].chars, {
+  color: "white",
+  stagger: 0.05,
+  scrollTrigger: {
+    trigger: ".text-reveal",
+    start: "top 97%",
+    end: "bottom 100%",
+    scrub: true,
+  },
 });
 
 const lenis = new Lenis();
@@ -42,7 +36,7 @@ const lenis = new Lenis();
 lenis.on("scroll", ScrollTrigger.update);
 
 gsap.ticker.add((time) => {
-  lenis.raf(time * 650);
+  lenis.raf(time * 900);
 });
 
 gsap.ticker.lagSmoothing(0);
