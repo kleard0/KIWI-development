@@ -1,7 +1,6 @@
 .service {
   height: 100vh;
   width: 100%;
-  background-color: white;
 }
 
 .title_service {
@@ -26,7 +25,7 @@
   text-align: center;
   margin-top: 15px;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   font-size: 1.9vw;
 }
@@ -44,7 +43,7 @@
 .service .container .box {
   width: 30%;
   height: 100%;
-  background: rgba(0, 0, 0, 1);
+  background-color: #14213d;
   -webkit-box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.83);
   box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.83);
   border-radius: 10px;
@@ -56,7 +55,7 @@
 .service .container .box h1 {
   color: white;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
   font-size: 1.7vw;
   text-align: center;

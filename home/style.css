@@ -3,6 +3,9 @@
   padding: 0;
   text-decoration: none;
 }
+body{
+  background-color: #e5e5e5;
+}
 a {
   color: white;
 }
@@ -20,11 +23,11 @@ header {
 
 .this-page {
   font-size: 1.6em;
-  color: #001d3d;
+  color: white;
 }
 
 .logo_container {
-  width: 20%;
+  width: 10%;
   height: 100%;
 }
 .head_bar .logo_container img {
@@ -35,6 +38,8 @@ header {
   color: white;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 
 .navbar li {
@@ -47,9 +52,30 @@ header {
   font-size: 1.5em;
   transition: all 0.3s ease-in-out;
 }
-
+.header_title{
+  height: 50vh;
+  width: 60%;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header_title img{
+  width: 100%;
+  height: auto;
+}
+.header_title h3{
+  color: #fca311;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2em;
+}
 li:hover {
   scale: 1.1;
   /*color: rgba(255, 255, 255, 0.815);*/
-  color: #001d3d;
+  color: #fca311;
 }
