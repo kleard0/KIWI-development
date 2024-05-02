@@ -16,19 +16,21 @@ window.addEventListener("scroll", function (e) {
   observer.observe(resumeHearder);
 });
 
-const selection = Splitting();
+const selections = Splitting();
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(selection[0].chars, {
-  color: "white",
-  stagger: 0.05,
-  scrollTrigger: {
-    trigger: ".text-reveal",
-    start: "top 97%",
-    end: "bottom 100%",
-    scrub: true,
-  },
+selections.forEach((selection) => {
+  gsap.from(selection.chars, {
+    color: "white",
+    stagger: 0.05,
+    scrollTrigger: {
+      trigger: selection.el,
+      start: "top 97%",
+      end: "bottom 100%",
+      scrub: 1,
+    },
+  });
 });
 
 const lenis = new Lenis();
@@ -36,7 +38,7 @@ const lenis = new Lenis();
 lenis.on("scroll", ScrollTrigger.update);
 
 gsap.ticker.add((time) => {
-  lenis.raf(time * 900);
+  lenis.raf(time * 650);
 });
 
 gsap.ticker.lagSmoothing(0);

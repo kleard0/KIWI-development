@@ -7,10 +7,6 @@ a {
   color: white;
 }
 
-li:hover {
-  scale: 1.1;
-  color: rgba(255, 255, 255, 0.815);
-}
 header {
   height: 100vh;
   width: 100%;
@@ -20,6 +16,11 @@ header {
   display: flex;
   height: 70px;
   width: 100%;
+}
+
+.this-page {
+  font-size: 1.6em;
+  color: #001d3d;
 }
 
 .logo_container {
@@ -45,4 +46,10 @@ header {
   font-style: normal;
   font-size: 1.5em;
   transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+  scale: 1.1;
+  /*color: rgba(255, 255, 255, 0.815);*/
+  color: #001d3d;
 }
