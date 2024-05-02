@@ -3,7 +3,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 7.5vw;
+  font-size: 6vw;
   margin-top: 25vh;
   margin-left: auto;
   margin-right: auto;
@@ -31,6 +31,11 @@ svg {
 }
 
 section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 50px;
   height: 100vh;
   width: 100%;
   background-color: white;
@@ -38,7 +43,18 @@ section {
 
 p {
   width: 70%;
-  margin: 25px auto;
   color: black;
   font-size: 22px;
+}
+
+.equipe-content {
+  background-color: wheat;
+}
+
+.daniel-content {
+  background-color: greenyellow;
+}
+
+.kylian-content {
+  background-color: blueviolet;
 }

@@ -31,7 +31,7 @@ selections.forEach((selection) => {
     scrollTrigger: {
       trigger: selection.el, //selectionner chaque élément de la liste
       start: "top 98%",
-      end: "bottom 98%",
+      end: "bottom 100%",
       scrub: 1, // L'animation se fini lorsque le scroll a atteint le "end"
     },
   });
