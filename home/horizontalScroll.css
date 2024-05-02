@@ -1,0 +1,57 @@
+.slide{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+/*   font-family: "Roboto", sans-serif;*/
+/*   font-weight: 400;*/
+/*   font-style: normal;*/
+/*   font-size: 100px;*/
+}
+.blockHorizontal{
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+.containerScroll{
+    width: 100vh ;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh) ;
+    transform-origin: top left;
+    overflow-x: hidden;
+    -ms-overlow-style: none;
+    scrollbar-width: none;
+}
+/* chrome, safary */
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.one{
+    background: blue;
+    display: flex;
+}
+.one .left{
+    width: 50%;
+    background-color: black;
+    
+}
+.one .right{
+    width: 50%;
+    background-color: white;
+    
+}
+.two{
+    background: red;
+}
+.three{
+    background: green
+}
+.four{
+    background: purple;
+}

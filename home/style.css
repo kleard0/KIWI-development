@@ -18,7 +18,7 @@ header {
 }
 .head_bar {
   display: flex;
-  height: 70px;
+  height: 10%;
   width: 100%;
 }
 
@@ -35,7 +35,28 @@ header {
   display: flex;
   justify-content: center;
 }
-
+.header{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+.header img{
+  margin-top: 50px;
+  height: auto;
+  width: 100%;
+}
+.header h3{
+  font-size: 2em;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
 .navbar li {
   list-style: none;
   text-align: center;
