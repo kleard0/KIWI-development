@@ -21,7 +21,6 @@ section {
 }
 
 .num-title {
-  margin-top: 150px;
 }
 
 .number-container {
@@ -30,6 +29,14 @@ section {
   align-items: center;
   height: 70%;
   margin-top: 100px;
+  width: 100%;
+}
+
+.sms-call {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
