@@ -23,13 +23,13 @@ gsap.registerPlugin(ScrollTrigger);
 selections.forEach((selection) => {
   gsap.from(selection.chars, {
     color: "white",
-    stagger: 0.05,
+    stagger: 0.05, // Temps entre le début des animations des caractères successifs
     scrollTrigger: {
       trigger: selection.el,
-      start: "top 97%",
-      end: "bottom 100%",
-      scrub: 1,
+      start: "top 97%", // Quand le haut de `selection.el` entre 97% du viewport
+      end: "bottom 100%", // Quand le bas de `selection.el` sort totalement du viewport
     },
+    duration: 0.01, // Durée réduite de l'animation pour chaque caractère
   });
 });
 

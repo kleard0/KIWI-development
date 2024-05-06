@@ -11,27 +11,30 @@
     <style type="text/css">
       @import url(../home/style.css);
       @import url(../font.css);
-      @import url(../home/header.css);
       @import url(../home/service.css);
       @import url(resume.css);
     </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+      </style>
   </head>
   <body>
     <header id="resume_header">
-      <div class="head_bar">
-        <div class="logo_container">
-          <a href="../home/index.html"> <img src="/images/logo_kiwi.png" /></a>
+        <div class="head_bar">
+            <div class="logo_container">
+                <a href="../home/index.html"> <img src="/images/logo_kiwi.png" /></a>
+            </div>
+            <nav class="navbar">
+                <a href="../home/index.html"> <li>ACCEUIL</li></a>
+                <a href="resume.html"> <li class="this-page">NOTRE HISTOIRE</li></a>
+                <a href="../project/project.html"><li>NOS REALISATIONS</li></a>
+                <a href="../contact/contact.html"> <li>NOS CONTACTS</li></a>
+            </nav>
         </div>
-        <nav class="navbar">
-          <a href="../home/index.html"> <li>ACCEUIL</li></a>
-          <a href="resume.html"> <li class="this-page">QUI SOMMES-NOUS</li></a>
-          <a href="../project/project.html"><li>NOS REALISATIONS</li></a>
-          <a href="../contact/contact.html"> <li>NOS CONTACTS</li></a>
-        </nav>
-      </div>
-      <div class="header_title">
-        <h1 class="title">QUI SOMMES-NOUS ?</h1>
-      </div>
+
+        <div class="header_title">
+          <h1 class="title">DECOUVRER <br> NOTRE HISTOIRE</h1>
+        </div>
       <svg
         id="Layer_1"
         data-name="Layer 1"
@@ -60,53 +63,46 @@
         />
       </svg>
     </header>
-    <section class="equipe-content">
-      <h2>Notre équipe</h2>
 
+    <section class="resume-content">
+      <h2>NOTRE EQUIPE</h2>
       <p data-splitting class="text-reveal" id="p-equipe">
-        Bonjour à tous ! Nous sommes Daniel OKPE et Kyllian LEARD, une équipe
-        passionnée de technologie et d'innovation. Nous avons commencé notre
-        aventure à Dijon, en étudiant ensemble au lycée Saint Joseph LaSalle, et
-        nous avons tous deux été acceptés à l'Epitech de Lyon. Animés par notre
-        désir commun de créer et d'innover, nous avons décidé de lancer notre
-        propre activité de solutions digitales tout en poursuivant nos études.
-        Notre objectif est simple, offrir à nos clients non pas un, mais deux
-        esprits créatifs et ingénieux pour le prix d'un seul.
+        Découvrez notre agence de développement web gérée par deux étudiants en informatique passionnés. <br>
+        Nous concevons des sites web complets en respectant les exigences du cahier des charges et des besoins clients. <br> 
+        Basés à Lyon et Dijon, nous travaillons à distance avec des clients partout en France. <br>
+         Notre approche est flexible, motivée et créative, que ce soit pour des sites web ou des applications mobiles. 
+         <br> Contactez-nous pour concrétiser vos projets digitaux !
       </p>
-    </section>
-    <section class="daniel-content">
-      <h2>Parcours de Daniel OKPE</h2>
 
-      <p data-splitting class="text-reveal" id="p-daniel">
-        Salut ! C'est Daniel. Après avoir terminé mes études secondaires, j'ai
-        poursuivi avec passion mes études en mathématiques et informatique
-        pendant trois ans à l'université. C'est là que j'ai découvert ma passion
-        pour l'informatique et que j'ai commencé à me plonger sérieusement dans
-        le monde de la programmation. Cette expérience universitaire m'a permis
-        d'acquérir une solide expertise dans le domaine, que ce soit à travers
-        mes cours ou mes projets personnels. Aujourd'hui, en tant que
-        co-fondateur de notre entreprise, je mets toute mon énergie et mes
-        compétences au service de la réalisation des projets les plus ambitieux
-        de nos clients.
-      </p>
-    </section>
+      <div class="id">
+        <div class="daniel_card">
+              <div class="head">
+                  <div class="id_block"></div>
+                  <h1> Daniel Okpe</h1>
+              </div>    
+              <div class="contact">
+                <p>Email : Daniel.okpe@gmail.com</p>
+                <p> Téléphone : 06.58.96.32.14</p>
+              </div>
+              <div class="info">
+                Quod reperiri cautela vehunt vehunt cedunt in vel planitie vel inertium ritu bina autem crispare cedunt bina trucidantur est et exsertare exsertare coeperint ob autem grassatores et deinceps in coeperint.
+              </div>
+          
+        </div>
+        <div class="kylian_card">
+            <div class="head">
+                <div class="id_block"></div>
+                <h1> Kylian Leard</h1>
+            </div>
+            <div class="contact">
+              <p>Email : Daniel.okpe@gmail.com</p>
+              <p>Téléphone : 06.58.96.32.14</p>
+            </div>
+        </div>
+      </div>
 
-    <section class="kylian-content">
-      <h2>Parcours de Kyllian LEARD</h2>
-      <p data-splitting class="text-reveal" id="p-kylian">
-        Salut tout le monde ! C'est Kylian. Après avoir terminé mes études
-        secondaires, j'ai poursuivi avec passion mes études en mathématiques et
-        informatique pendant trois ans à l'université. C'est là que j'ai
-        découvert ma passion pour l'informatique et que j'ai commencé à me
-        plonger sérieusement dans le monde de la programmation. Cette expérience
-        universitaire m'a permis d'acquérir une solide expertise dans le
-        domaine, que ce soit à travers mes cours ou mes projets personnels.
-        Aujourd'hui, en tant que co-fondateur de notre entreprise, je mets toute
-        mon énergie et mes compétences au service de la réalisation des projets
-        les plus ambitieux de nos clients.
-      </p>
     </section>
-
+    
     <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
