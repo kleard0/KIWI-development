@@ -1,5 +1,4 @@
-
-.container_contact{
+.container_contact {
   margin-top: 2%;
   display: flex;
   width: 90%;
@@ -24,7 +23,7 @@
   align-items: center;
   color: black;
 }
-.container_contact h1{
+.container_contact h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -32,7 +31,7 @@
   margin-top: 2%;
   margin-left: 5%;
 }
-.container_contact .contact_method{
+.container_contact .contact_method {
   display: flex;
   width: 60%;
   height: 40%;
@@ -45,31 +44,34 @@
   border-radius: 15px;
   color: #14213d;
 }
-.container_contact .contact_method .left{
+.container_contact .contact_method .left {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container_contact .contact_method .right{
+.container_contact .contact_method .right {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.container_contact .sender{
+.container_contact .sender {
   width: 100%;
   height: 70%;
   background-color: #14213d;
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
- 
+}
+
+.container_contact .sender form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container_contact .sender h1{
+
+.container_contact .sender h1 {
   color: white;
 }
 
@@ -88,7 +90,6 @@
   resize: none;
 }
 
-
 .submit {
   margin-top: 3%;
   padding: 15px 35px;
@@ -101,5 +102,3 @@
 .submit:hover {
   scale: 1.1;
 }
-
-
