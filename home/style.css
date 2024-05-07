@@ -115,17 +115,21 @@ li:hover {
 }
 .presentation {
   display: flex;
-  height: 40vh;
+  height: 55vh;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  
+  border: solid #fca311;
   margin-top: 5%;
   text-align: left;
   background-color: white;
   border-radius: 15px;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .presentation .left{
   width: 50%;
@@ -137,11 +141,16 @@ li:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
-  
+  font-size: 30px;
+  color: #14213d; 
+  flex-direction: column;
+}
+.presentation .left img{
+  height:25%;
+  width: auto;
+
 }
 .presentation .right{
-  margin-top: 10%;
   width: 50%;
   height: 100%;
   font-family: "Roboto", sans-serif;
@@ -149,5 +158,25 @@ li:hover {
   font-style: normal;
   font-size: 25px;
   line-height: 30px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #14213d;
+  flex-direction: column;
 }
+.presentation .right button{
+  margin-top: 3%;
+  height: 10%;
+  width: 30%;
+  background: rgba(20, 33, 61, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+
+
