@@ -1,7 +1,7 @@
 .title {
   color: white;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
   font-size: 6vw;
   margin-top: 20vh;
@@ -47,7 +47,7 @@ section {
   margin-bottom: 25px;
   font-size: 22px;
   color: black;
-  text-align: center;
+  text-align: ce;
   
 }
 
@@ -65,6 +65,7 @@ section {
   justify-content: space-between;
   margin-top: 10vh;
   display: flex;
+
 }
 .resume-content .id h1{
   font-family: "Roboto", sans-serif;
@@ -103,18 +104,43 @@ section {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
+  width: 80%;
 
 }
-.resume-content .id .info p{
-  margin-top: 5%;
+.resume-content .id .info{
+  width: 80%;
   margin-left: 10%;
+  margin-top: 2%;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
+
 .id_block{
   height: 35px;
   width: 35px;
   background-color: #14213d;
+}
+.resume-content .id .daniel_card .school_img{
+  width: 70%;
+  height: 12%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.resume-content .id .kylian_card .school_img{
+  width: 50%;
+  height: 15%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.school_img img{
+  height: 100%;
+  width: auto;
 }
 
