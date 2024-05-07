@@ -1,3 +1,4 @@
+
 .title {
   color: white;
   font-family: "Roboto", sans-serif;
@@ -47,12 +48,11 @@ section {
   margin-bottom: 25px;
   font-size: 22px;
   color: black;
-  text-align: ce;
+  text-align: center;
   
 }
 
 .resume-content {
-  background-color: white;
   width: 100%;
   
 }
@@ -60,7 +60,7 @@ section {
 
 .resume-content .id{
   display: flex;
-  height: 50vh;
+  height: 60vh;
   width: 60%;
   justify-content: space-between;
   margin-top: 10vh;
@@ -75,9 +75,14 @@ section {
 .resume-content .id .daniel_card{
   border: solid 2px ;
   width: 48%;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  background: rgba( 255, 255, 255, 1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid black;
 }
 .resume-content .id .kylian_card{
   border: solid 2px;
@@ -85,6 +90,12 @@ section {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+    background: rgba( 255, 255, 255, 1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid black;
 }
 .resume-content .id .head{
   display: flex;
