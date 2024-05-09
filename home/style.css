@@ -126,12 +126,12 @@ li:hover {
   border-radius: 15px;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 20px );
-  -webkit-backdrop-filter: blur( 20px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.presentation .left{
+.presentation .left {
   width: 50%;
   height: 100%;
   text-align: left;
@@ -142,15 +142,14 @@ li:hover {
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
-  color: #14213d; 
+  color: #14213d;
   flex-direction: column;
 }
-.presentation .left img{
-  height:25%;
+.presentation .left img {
+  height: 25%;
   width: auto;
-
 }
-.presentation .right{
+.presentation .right {
   width: 50%;
   height: 100%;
   font-family: "Roboto", sans-serif;
@@ -164,7 +163,7 @@ li:hover {
   color: #14213d;
   flex-direction: column;
 }
-.presentation .right button{
+.presentation .right button {
   margin-top: 3%;
   height: 10%;
   width: 30%;
@@ -178,5 +177,17 @@ li:hover {
   border-radius: 5px;
 }
 
+/*responsive*/
 
+@media screen and (max-width: 600px) {
+  .navbar li {
+    font-size: 0.8em;
+  }
+}
 
+@media screen and (max-width: 450px) {
+  .navbar {
+    flex-direction: column;
+    display: none;
+  }
+}
