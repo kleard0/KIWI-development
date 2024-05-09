@@ -93,3 +93,25 @@
   width: 30%;
   border-radius: 15px;
 }
+
+@media screen and (max-width: 1920px) {
+  .service .container{
+    height: 65vh;
+
+  }
+  .service .container .box p{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .service .container{
+    height: 58vh;
+    width: 85%;
+
+  }
+
+
+}
+
+

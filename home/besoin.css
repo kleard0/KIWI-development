@@ -82,3 +82,9 @@
     color: white;
     
 }
+@media screen and (max-width: 1300px) {
+    .besoin{
+      margin-top: -80vh;
+    }
+    
+  }
