@@ -184,3 +184,10 @@ li:hover {
     font-size: 0.8em;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    flex-direction: column;
+    display: none;
+  }
+}

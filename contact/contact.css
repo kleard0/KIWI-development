@@ -218,3 +218,19 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .container_contact .card {
+    width: 90%;
+  }
+  .message {
+    width: 80%;
+    height: 8em;
+  }
+  .mail {
+    width: 80%;
+  }
+  .submit {
+    padding: 10px 20px;
+  }
+}
