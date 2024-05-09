@@ -59,6 +59,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
 }
 .besoin_container .classique_section img{
     width: auto;
@@ -66,7 +67,7 @@
     margin-right: -10%;
     border-radius: 10px;
     box-shadow: 2px black;
-    filter: drop-shadow( -5px 6px 4px black);
+    filter: drop-shadow( -3px 3px 4px black);
 }
 .besoin_container .besoin_title{
     display: flex;
