@@ -42,3 +42,14 @@ gsap.ticker.add((time) => {
 });
 
 gsap.ticker.lagSmoothing(0);
+
+//navbar burger
+
+const burger = document.getElementById("burger-cross");
+const headBar = document.getElementById("head_bar");
+console.log(headBar);
+console.log(burger);
+
+burger.addEventListener("click", () => {
+  headBar.classList.toggle("active");
+});

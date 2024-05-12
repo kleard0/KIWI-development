@@ -40,6 +40,8 @@ header {
   justify-content: center;
   align-items: center;
   width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar li {
@@ -177,16 +179,28 @@ li:hover {
   border-radius: 5px;
 }
 
+#burger-cross {
+  display: none;
+}
+
 /*responsive*/
 
-
 @media screen and (max-width: 1920px) {
-  .presentation p{
+  .presentation p {
     font-size: 19px;
     line-height: 25px;
   }
 }
+
+@media screen and (max-width: 770px) {
+  .navbar li {
+    font-size: 1.2em;
+  }
+}
 @media screen and (max-width: 600px) {
+  .navbar {
+    width: 70%;
+  }
   .navbar li {
     font-size: 0.8em;
   }
@@ -194,8 +208,42 @@ li:hover {
 
 @media screen and (max-width: 450px) {
   .navbar {
+    position: fixed;
+    top: -100%;
+    left: 19%;
     flex-direction: column;
-    display: none;
+    row-gap: 1vh;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.25s ease-in-out;
+  }
+  .navbar li {
+    padding: 0;
+    font-size: 17px;
+  }
+  #burger-cross {
+    color: #e5e5e5;
+    display: block;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  #burger-cross::before {
+    content: "\2630";
+  }
+  .head_bar {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .head_bar.active #burger-cross::before {
+    content: "\2715";
+  }
+
+  .head_bar.active .navbar {
+    top: 1%;
+    visibility: visible;
   }
 }
-
