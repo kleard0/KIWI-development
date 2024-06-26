@@ -7,13 +7,10 @@
 
     <style type="text/css">
       @import url(style.css);
-      @import url(font.css);
       @import url(header.css);
-      @import url(service.css);
       @import url(horizontalScroll.css);
       @import url(besoin.css);
-      @import url(end-page.css);
-      @import url(besoin2.css);
+      @import url(entrepreneur.css);
     </style>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -62,63 +59,104 @@
               <button>Nous découvrir</button>
             </div>       
         </div>
-              
-       
 
-        <div class="service">
-              <h1 class="service_title">NOS SERVICES</h1>
-              <h2>Vous imaginez, nous développons.</h2>
-              
-              <div class="container">
-                  <div class="box_container">
-                      <div class="box" id="card0">
-                          <h1 class="0">Développement web</h1>
-                          <img src="service_img/webdev_img.webp">
-                          <p class="0">
-                            Nous développons des sites web sur mesure pour 
-                            votre entreprise, que ce soit <br /> pour une vitrine en ligne,
-                            un site e-commerce <br /> ou une plateforme complexe. <br />
-                            Notre priorité est d'assurer une expérience <br />
-                            utilisateur optimale.
-                          </p>
-                      </div>
+        <div class="besoin">
+          <div id="first_one" class="besoin_card">
+            <h1> Quel est votre besoin ?</h1>
+            <p> Nous y apporterons une solution.</p>
+          </div>
+          <div class="besoin_card">
+            <h1> Création ou refonte de site</h1>
+            <p>Vous êtes une entreprise, une association  <br> 
+              ou un professionnel ? Boostez votre visibilité en ligne <br>
+              avec un site vitrine.<br>
+              Attirez de nouveaux clients et renforcez votre image <br> 
+              de marque dès aujourd'hui !</p>
+          </div>
+          <div class="besoin_card">
+            <h1> Site e-commerce</h1>
+            <p>Vous êtes une entreprise ou un commerçant ? <br>
+              Augmentez vos ventes en ligne avec un <br>
+               site e-commerce. Attirez plus de clients et  <br> 
+               boostez votre chiffre d'affaires dès aujourd'hui !
+            </p>
+          </div>
+          <div class="besoin_card">
+            <h1>Application web</h1>
+            <p>
+              Vous êtes une entreprise, une association, <br>
+              un professionnel ? Boostez votre efficacité  <br> 
+              avec notre application web. Simplifiez vos processus <br>
+               et améliorez votre productivité dès aujourd'hui !</p>
 
-                      <div class="box" id="card1">
-                          <h1 class="1">Développement mobile</h1>
-                          <img src="service_img/mobiledev_img.webp">
-                          <p class="1">
-                            Nous concevons des applications mobiles intuitives
-                            et performantes pour iOS et  <br />Android, adaptées 
-                            à vos besoins spécifiques. <br /> Notre objectif : offrir une expérience
-                            <br />  utilisateur optimale sur tous les appareils mobiles.
-                          </p>
-                      </div>
-
-                      <div class="box" id="card2">
-                          <h1 class="2">Conseils & formations</h1>
-                          <img src="service_img/advice_img.webp">
-                          <p class="2">
-                            En plus du développement, nous proposons <br /> des 
-                            conseils et formations personnalisés <br /> pour vous
-                            aider à exploiter pleinement <br /> le monde numérique 
-                            et former <br /> votre équipe aux dernières tendances technologiques.
-                          </p>
-                      </div>  
+          </div>
+          <div class="besoin_card">
+            <h1>Application mobile</h1>
+            <p>
+              Vous avez une idée ? Réalisez-la avec notre <br>
+               expertise. Simplifiez vos processus, engagez <br>
+                utilisateurs et propulsez votre projet vers <br> 
+                le succès dès maintenant !</p>
+          </div>
+          <div class="besoin_card">
+            <h1> Logiciel</h1>
+            <p>Vous avez une idée pour un logiciel innovant ? <br>
+               Transformez-la en réalité avec notre expertise. <br>
+                Optimisez vos opérations, améliorez votre <br>
+                 efficacité et atteignez vos objectifs <br> stratégiques dès aujourd'hui !</p>
+          </div>
+        </div>
+        <h1 class="solution_title"> Une solution en fonction de votre besoin</h1>
+        <div class="entrepreneur_container">
+            <div class="head">
+                  <div class="button_container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
                   </div>
-              </div>
-        </div>
-        <div class="besoin2"> 
-            <div class="besoin-backgnd"></div>
-            <div class="besoin-container">
-                    <div><h1>Quel est votre besoin ?</h1></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                  <div class="search_bar_container">
+                       <div class="search_bar"> caca.com</div>
+                  </div>
             </div>
+            <div class="tab_container">
+              <button class="tab" id="start">Une petite envie ?</button>
+              <button class="tab" id="essential">une envie moyenne ?</button>
+              <button class="tab" id="full"> Une grosse envie ?</button>
+             </div>
+             <div class="content content-start">Start</div>
         </div>
 
+        
+              
+        <script>
+          const StartButton = document.getElementById('start');
+          const EssentialButton = document.getElementById('essential');
+          const FullButton = document.getElementById('full');
+          const content = document.querySelector('.content');
+      
+          StartButton.addEventListener('click', () => {
+            content.classList.remove('content-essential', 'content-full');
+            content.classList.add('content-start');
+            content.textContent = 'Start';
+          });
+          
+      
+          EssentialButton.addEventListener('click', () => {
+            content.classList.remove('content-start', 'content-full');
+            content.classList.add('content-essential');
+            content.textContent = 'Essential';
+          });
+      
+          FullButton.addEventListener('click', () => {
+            content.classList.remove('content-start', 'content-essential');
+            content.classList.add('content-full');
+            content.textContent = 'Full';
+          });
+        </script>
+
+      
+
+<!--
         <div class="solution">
           <h1> NOTRE SOLUTION EN 4 ETAPE </h1>
             <div class="containerScroll">
@@ -179,46 +217,8 @@
             </div>
         </div>
 
-        <div class="besoin">
-          <div class="besoin_container">
-              <section class="besoin_title">
-                <h1>Quel est <br> votre besoin ?</h1>
-              </section>
-              <section class="classique_section">
-                <h2>Site vitrine</h2>
-                <img src="besoin_img/showcasewebsite_img.webp">
-              </section>
-              <section class="classique_section">
-                <h2>Application Web</h2>
-                <img src="besoin_img/webapplication_img.webp">
-              </section>
-              <section class="classique_section">
-                <h2>Site marchand</h2>
-                <img src="besoin_img/ecommerce_website_img.webp">
-              </section>
-              <section class="classique_section">
-                <h2>Logiciel<br> métier</h2>
-                <img src="besoin_img/software_img.webp">
-
-              </section>
-              <section class="classique_section">
-                <h2>Application mobile</h2>
-                <img src="besoin_img/smartphone_app_img.webp">
-            </section>
-          </div>
-        </div>
-          <section>
-            <h1>Vous etes intéressé ?</h1>
-            <p> Contactez-nous et obtenez un devis.</p>
-            <button> Nous contacter</button>
-
-          </section>
-
-            
-          </div>
-        </div>
-
-
+  
+-->
 
 
 
@@ -226,6 +226,8 @@
     </main>
 
   </body>
+
+  <!--
   <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
@@ -233,4 +235,5 @@
     <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
     <script src="../index.js"></script>
+    -->
 </html>

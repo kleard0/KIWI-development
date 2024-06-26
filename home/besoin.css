@@ -1,90 +1,69 @@
 .besoin{
-    margin-top: -130vh;
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.besoin h1{
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 2.5vw;
-    color: white;
-}
-.besoin_container{
-    height: 80vh;
-    width: 100%;
-    margin-top: 5vh;
+    margin-top: 10vh;
+    width: 80%;
+    height: 90vh;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    
+}
+.besoin .besoin_card{
+    height: 46%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #14213d;
+    border-radius: 10px;
+    border: 1px solid black; 
+    display: flex;
+    align-items: center; 
+    flex-direction: column; 
     justify-content: center;
-    align-items: center;
-
 }
 
-.besoin_container  h2{
+#first_one{
+    background-color: #0b1215;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+#first_one h1{
+    margin-top: 0%;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4vh;
+
+}
+#first_one p{
+    margin-top: 4%;
+    color: white;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.besoin .besoin_card h1{
+    color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 2vw;
-    margin-bottom: 2%;
-    margin-left: 2%;
+    text-align: center;
+    font-size: 3vh;
 }
-
-.besoin_container  section{
-    height: 40%;
-    margin-bottom: 2%;
-    width: 25%;
-    color:#14213d;
-    border: solid white 2px;
-    background-color: white;
-    margin-left: 2%;
-    margin-right: 2%;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-.besoin_container .classique_section h1{
-    margin-left: 2%;
-    margin-top: 50%;
+.besoin .besoin_card p{
+    margin-top: 10%;
+    color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
-}
-.besoin_container .classique_section img{
-    width: auto;
-    height: 90%;
-    margin-right: -10%;
-    border-radius: 10px;
-    box-shadow: 2px black;
-    filter: drop-shadow( -3px 3px 4px black);
-}
-.besoin_container .besoin_title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border: none;
-}
-.besoin_container .besoin_title h1{
     text-align: left;
-    font-size: 4em;
-    color: white;
-    
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.9vh;
+    line-height: 1.5;
 }
-@media screen and (max-width: 1300px) {
-    .besoin{
-      margin-top: -80vh;
-    }
-    
-  }
