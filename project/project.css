@@ -1,4 +1,7 @@
-h1 {
+body{
+  background-color: #14213d;
+}
+.header_title h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -6,4 +9,60 @@ h1 {
   color: white;
   margin-left: auto;
   margin-right: auto;
+}
+
+.restaurant_reunionnais{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.restaurant_reunionnais section{
+  width: 50%;
+  height: 100%;
+}
+.restaurant_reunionnais .left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant_reunionnais .left h1{
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4em;
+  margin-top: 5vh;
+}
+.restaurant_reunionnais .left img{
+  width: 50%;
+  height: auto;
+}
+.restaurant_reunionnais .right{
+
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.restaurant_reunionnais .text_reunion{
+  margin-left: 5%;
+}
+.restaurant_reunionnais .right h1{
+  color: #14213d;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5em;
+  text-align: left;
+}
+.restaurant_reunionnais .right p{
+  color: #14213d;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1em;
+  text-align: left;
+  margin-top: 1vh;
+
 }

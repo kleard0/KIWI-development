@@ -119,40 +119,42 @@
                   </div>
             </div>
             <div class="tab_container">
-              <button class="tab" id="start">Une petite envie ?</button>
-              <button class="tab" id="essential">une envie moyenne ?</button>
-              <button class="tab" id="full"> Une grosse envie ?</button>
+              <button onclick="showDiv('div1')">>Une petite envie ?</button>
+              <button onclick="showDiv('div2')">une envie moyenne ?</button>
+              <button onclick="showDiv('div3')"> Une grosse envie ?</button>
              </div>
-             <div class="content content-start">Start</div>
+
+             <div id="div1" class="content">
+              w
+            </div>
+            <div id="div2" class="content">
+              Contenu de la div 2
+            </div>
+            <div id="div3" class="content">
+              Contenu de la div 3
+            </div>
+      
+      
         </div>
 
         
-              
         <script>
-          const StartButton = document.getElementById('start');
-          const EssentialButton = document.getElementById('essential');
-          const FullButton = document.getElementById('full');
-          const content = document.querySelector('.content');
-      
-          StartButton.addEventListener('click', () => {
-            content.classList.remove('content-essential', 'content-full');
-            content.classList.add('content-start');
-            content.textContent = 'Start';
-          });
-          
-      
-          EssentialButton.addEventListener('click', () => {
-            content.classList.remove('content-start', 'content-full');
-            content.classList.add('content-essential');
-            content.textContent = 'Essential';
-          });
-      
-          FullButton.addEventListener('click', () => {
-            content.classList.remove('content-start', 'content-essential');
-            content.classList.add('content-full');
-            content.textContent = 'Full';
-          });
-        </script>
+        function showDiv(divId) {
+            // Cacher toutes les divs
+            var divs = document.querySelectorAll('.content');
+            divs.forEach(function(div) {
+                div.classList.remove('active');
+            });
+
+            // Afficher la div sélectionnée
+            var selectedDiv = document.getElementById(divId);
+            selectedDiv.classList.add('active');
+        }
+    </script>
+
+        
+              
+   
 
       
 
