@@ -110,7 +110,7 @@ h3 {
   -webkit-backdrop-filter: blur(11.5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-li:hover {
+.navbar li:hover {
   scale: 1.1;
   /*color: rgba(255, 255, 255, 0.815);*/
   color: #fca311;
