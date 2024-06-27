@@ -1,0 +1,38 @@
+footer {
+  margin-top: 50px;
+  background-color: black;
+  height: 250px;
+  color: white;
+  padding-top: 45px;
+}
+.footer_top {
+  display: flex;
+  justify-content: space-around;
+}
+.footer_top .footer_logo img {
+  height: 180px;
+  width: 150px;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+  color: #fca311;
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement si nécessaire */
+}
+
+.footer_bottom span {
+  margin-left: auto;
+  margin-right: auto;
+}
