@@ -1,9 +1,9 @@
 footer {
-  margin-top: 50px;
   background-color: black;
   height: 250px;
   color: white;
   padding-top: 45px;
+  width: 100%;
 }
 .footer_top {
   display: flex;
@@ -35,4 +35,16 @@ li:hover {
 .footer_bottom span {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 450px) {
+  ul {
+    display: none;
+  }
+
+  .footer_social_network {
+    height: 150px;
+    display: flex;
+    align-items: center;
+  }
 }
