@@ -1,9 +1,9 @@
 footer {
-  margin-top: 50px;
   background-color: black;
   height: 250px;
   color: white;
   padding-top: 45px;
+  width: 100%;
 }
 .footer_top {
   display: flex;
