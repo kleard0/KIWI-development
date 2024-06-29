@@ -121,53 +121,27 @@
             stratégiques dès aujourd'hui !
           </p>
         </div>
-        <h1 class="solution_title"> Une solution en fonction de votre besoin</h1>
-        <div class="entrepreneur_container">
-            <div class="head">
-                  <div class="button_container">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                  <div class="search_bar_container">
-                       <div class="search_bar"> caca.com</div>
-                  </div>
-            </div>
-            <div class="tab_container">
-              <button class="tab" id="start">Une petite envie ?</button>
-              <button class="tab" id="essential">une envie moyenne ?</button>
-              <button class="tab" id="full"> Une grosse envie ?</button>
-             </div>
-             <div class="content content-start">Start</div>
-        </div>
+      </div>
 
-        
-              
-        <script>
-          const StartButton = document.getElementById('start');
-          const EssentialButton = document.getElementById('essential');
-          const FullButton = document.getElementById('full');
-          const content = document.querySelector('.content');
-      
-          StartButton.addEventListener('click', () => {
-            content.classList.remove('content-essential', 'content-full');
-            content.classList.add('content-start');
-            content.textContent = 'Start';
-          });
-          
-      
-          EssentialButton.addEventListener('click', () => {
-            content.classList.remove('content-start', 'content-full');
-            content.classList.add('content-essential');
-            content.textContent = 'Essential';
-          });
-      
-          FullButton.addEventListener('click', () => {
-            content.classList.remove('content-start', 'content-essential');
-            content.classList.add('content-full');
-            content.textContent = 'Full';
-          });
-        </script>
+      <h1 class="solution_title">Une solution en fonction de votre besoin</h1>
+      <div class="entrepreneur_container">
+        <div class="head">
+          <div class="button_container">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="search_bar_container">
+            <div class="search_bar">caca.com</div>
+          </div>
+          <div class="tab_container">
+            <button class="tab" id="start">Une petite envie ?</button>
+            <button class="tab" id="essential">une envie moyenne ?</button>
+            <button class="tab" id="full">Une grosse envie ?</button>
+          </div>
+          <div class="content content-start">Start</div>
+        </div>
+      </div>
 
       <!--
         <div class="solution">
@@ -233,6 +207,23 @@
   
 -->
     </main>
+
+    <footer>
+      <div class="footer_top">
+        <div class="footer_logo"><img src="/images/logo_kiwi.png" /></div>
+        <div class="footer_link_page">
+          <ul>
+            <a href="../project/project.html"><li>Nos réalisations</li></a>
+            <a href="../resume/resume.html"><li>Notre Histoire</li></a>
+            <a href="../contact/contact.html"><li>Nos Contacts</li></a>
+          </ul>
+        </div>
+        <div class="footer_social_network">
+          <span>kiwidev.contact@gmail.com </span>
+        </div>
+      </div>
+      <div class="footer_bottom"><span>©2024, Tout droits réservé</span></div>
+    </footer>
   </body>
 
   <!--
@@ -244,4 +235,28 @@
 
     <script src="../index.js"></script>
     -->
+  <script>
+    const StartButton = document.getElementById("start");
+    const EssentialButton = document.getElementById("essential");
+    const FullButton = document.getElementById("full");
+    const content = document.querySelector(".content");
+
+    StartButton.addEventListener("click", () => {
+      content.classList.remove("content-essential", "content-full");
+      content.classList.add("content-start");
+      content.textContent = "Start";
+    });
+
+    EssentialButton.addEventListener("click", () => {
+      content.classList.remove("content-start", "content-full");
+      content.classList.add("content-essential");
+      content.textContent = "Essential";
+    });
+
+    FullButton.addEventListener("click", () => {
+      content.classList.remove("content-start", "content-essential");
+      content.classList.add("content-full");
+      content.textContent = "Full";
+    });
+  </script>
 </html>
