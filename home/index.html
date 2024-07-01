@@ -190,29 +190,5 @@
   <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
   <script src="../index.js"></script>
-  <script>
-
-    const StartButton = document.getElementById("start");
-    const EssentialButton = document.getElementById("essential");
-    const FullButton = document.getElementById("full");
-    const content = document.querySelector(".content");
-
-    StartButton.addEventListener("click", () => {
-      content.classList.remove("content-essential", "content-full");
-      content.classList.add("content-start");
-      content.textContent = "Start";
-    });
-
-    EssentialButton.addEventListener("click", () => {
-      content.classList.remove("content-start", "content-full");
-      content.classList.add("content-essential");
-      content.textContent = "Essential";
-    });
-
-    FullButton.addEventListener("click", () => {
-      content.classList.remove("content-start", "content-essential");
-      content.classList.add("content-full");
-      content.textContent = "Full";
-    });
-  </script>
+  
 </html>
