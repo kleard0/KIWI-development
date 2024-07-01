@@ -8,13 +8,14 @@
     <style type="text/css">
       @import url(style.css);
       @import url(header.css);
+      @import url(horizontalScroll.css);
       @import url(besoin.css);
-    /*@import url(entrepreneur.css);*/
-    /*  @import url(footer.css); */
+      @import url(entrepreneur.css);
+      @import url(footer.css);
     </style>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-    </style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+      </style>
   </head>
   <body>
     <header>
@@ -47,9 +48,12 @@
     <main>
       <div class="presentation">
         <div class="left">
-          <h1>
-            Agence de <br />développement <br />
+          <h1 id="normal_title1">
+            Une agence de <br />développement <br />
             dématérialisé
+          </h1>
+          <h1 id="responsive_title1">
+            Une agence de développement dématérialisé
           </h1>
         </div>
         <div class="right">
@@ -120,117 +124,45 @@
             stratégiques dès aujourd'hui !
           </p>
         </div>
-        <h1 class="solution_title"> Une solution en fonction de votre besoin</h1>
-        <div class="entrepreneur_container">
-            <div class="head">
-                  <div class="button_container">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                  <div class="search_bar_container">
-                       <div class="search_bar"> caca.com</div>
-                  </div>
+      </div>
+
+      <h1 class="solution_title">Vous démarrez votre activité ?</h1>
+      <div class="entrepreneur_container">
+            <div class="side_formule">
+              <h1>FORMULE BASIQUE</h1>
+              <ul>
+                <li>Site vitrine monopage avec hébergement et domaine</li>
+                <li>Logo</li>  
+                <li></li>  
+                <li></li>    
+              </ul>
+              <button class="devis_button">Obtenir un devis</button>
             </div>
-            <div class="tab_container">
-              <button class="tab" id="start">Une petite envie ?</button>
-              <button class="tab" id="essential">une envie moyenne ?</button>
-              <button class="tab" id="full"> Une grosse envie ?</button>
-             </div>
-             <div class="content content-start">Start</div>
-        </div>
 
-        
-              
-        <script>
-          const StartButton = document.getElementById('start');
-          const EssentialButton = document.getElementById('essential');
-          const FullButton = document.getElementById('full');
-          const content = document.querySelector('.content');
-      
-          StartButton.addEventListener('click', () => {
-            content.classList.remove('content-essential', 'content-full');
-            content.classList.add('content-start');
-            content.textContent = 'Start';
-          });
-          
-      
-          EssentialButton.addEventListener('click', () => {
-            content.classList.remove('content-start', 'content-full');
-            content.classList.add('content-essential');
-            content.textContent = 'Essential';
-          });
-      
-          FullButton.addEventListener('click', () => {
-            content.classList.remove('content-start', 'content-essential');
-            content.classList.add('content-full');
-            content.textContent = 'Full';
-          });
-        </script>
-
-      <!--
-        <div class="solution">
-          <h1> NOTRE SOLUTION EN 4 ETAPE </h1>
-            <div class="containerScroll">
-              <div class="blockHorizontal">
-                <div class="slide one">
-                  <div class="left">
-                      <h1> 1. Cadrage du projet</h1>
-                      <p>
-                        La phase de cadrage est la première étape cruciale de notre processus <br>
-                         de développement informatique. Elle implique une rencontre initiale avec <br>
-                          le client pour analyser ses besoins et présenter notre solution personnalisée. <br>
-                           Cette rencontre vise à obtenir la validation du client,  <br> 
-                           assurant un démarrage solide du projet.</p>
-                  </div>
-                  <div class="right">
-                    <img src="solution_img/cadrage_img.webp">
-                  </div>
-                </div>
-                <div class="slide two">
-                  <div class="left">
-                    <h1> 2. Conception du projet</h1>
-                    <p>La conception est une étape fondamentale de notre processus  où nous <br>
-                      élaborons un devis détaillé, rédigeons un cahier des charges précis et<br>
-                       planifions une roadmap claire. Cette phase structure le projet pour  <br>
-                       un développement efficace et conforme aux attentes du client.</p>
-                  </div>
-                  <div class="right">
-                    <img src="solution_img/conception_img.webp">
-                  </div>
-                </div>
-                <div class="slide three">
-                  <div class="left">
-                    <h1> 3. Exécution</h1>
-                    <p>
-                      L'exécution est une phase clé de notre processus où nous réalisons  <br> 
-                      le design (UI/UX) de la solution, suivons avec le développement informatique  <br> 
-                      et concluons par la présentation du projet finalisé. Cette étape transforme les plans initiaux en une solution opérationnelle et visuellement attrayante.</p>
-                  </div>
-                  <div class="right">
-                    <img src="solution_img/execution_img.webp">
-
-                  </div>
-                </div>
-                <div class="slide four">
-                  <div class="left">
-                    <h1> 4. Optimisation continue</h1>
-                    <p> 
-                      L'optimisation continue est la dernière phase de notre processus,<br>
-                       où nous gérons l'hébergement, la maintenance, le débuggage et <br>
-                        les mises à jour de sécurité du projet. Cette étape assure la <br>
-                         performance et la sécurité durables de la solution déployée.</p>
-                  </div>
-                  <div class="right">
-                    <img src="solution_img/maintenance_img.webp">
-                  </div>
-                </div>
-              </div>
+            <div class="middle_formule">
+              <h1>FORMULE CROISSANCE</h1>
+              <ul>
+                <li>Site web complet</li>
+                <li>Hébergement et nom de domaine</li>
+                <li>Logo</li>        
+                <li>Carte visite</li>   
+                <li>Signature e-mail</li>   
+              </ul>
+              <button class="devis_button">Obtenir un devis</button>
             </div>
-        </div>
 
-  
--->
+            <div class="side_formule">
+              <h1>FORMULE EXPERT</h1>
+              <ul>
+                <li>Application web avec hébergement et domaine</li>
+                <li>Logo</li>        
+                <li>Carte visite</li>   
+                <li>Signature e-mail</li>   
+              </ul>
+              <button class="devis_button">Obtenir un devis</button>
+            </div>
+      </div>
+
     </main>
 
     <footer>
@@ -251,16 +183,15 @@
     </footer>
   </body>
 
-  <!--
   <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
-    <script src="../index.js"></script>
-    -->
+  <script src="../index.js"></script>
   <script>
+
     const StartButton = document.getElementById("start");
     const EssentialButton = document.getElementById("essential");
     const FullButton = document.getElementById("full");

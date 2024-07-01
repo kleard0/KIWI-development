@@ -67,3 +67,48 @@
     font-size: 1.9vh;
     line-height: 1.5;
 }
+@media screen and (max-width: 1550px) {
+    .besoin{
+        height: 90vh;
+    }
+    .besoin .besoin_card p{
+        margin-top: 10%;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+  }
+  @media screen and (max-width: 1350px) {
+    .besoin{
+        height: 80vh;
+    }
+    .besoin .besoin_card p{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+  }
+  @media screen and (max-width: 1350px) {
+    .besoin{
+        height: 80vh;
+    }
+    .besoin .besoin_card p{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+  }
+  @media screen and (max-width: 1350px) {
+    .besoin{
+        height: 70vh;
+    }
+    .besoin .besoin_card p{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+  }
+  @media screen and (max-width: 1450px) {
+    .besoin{
+        height: 70vh;
+    }
+    .besoin .besoin_card {
+        width: 45%;
+    }
+  }
