@@ -88,6 +88,14 @@
   border: solid black 1px;
   resize: none;
 }
+.choix {
+  display: flex;
+  color: white;
+  margin-top: 20px;
+}
+.choix div {
+  margin-right: 10px;
+}
 
 .submit {
   margin-top: 3%;
