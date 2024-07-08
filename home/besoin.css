@@ -126,9 +126,25 @@ main{
         height: 30%;
     }
   }
+  @media screen and (max-width: 1000px){
+    .besoin{
+        margin-top: 20vh;
+    }
+  }
+  @media screen and (max-width: 910px){
+    .besoin{
+        margin-top: 30vh;
+    }
+  }
+  @media screen and (max-width: 710px){
+    .besoin{
+        margin-top: 40vh;
+    }
+  }
   @media screen and (max-width: 600px) {
     .besoin{
-        height: 200vh;
+        margin-top: 40vh;
+        height: 330vh;
         width: 99%;
     }
     .besoin .besoin_card {
@@ -136,7 +152,7 @@ main{
         height: 15%;
     }
     .besoin .besoin_card p{
-        font-size: 15px;
+        font-size: 17px;
         line-height: 1.5;
     }
   }

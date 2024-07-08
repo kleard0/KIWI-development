@@ -19,6 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .middle_formule{
   height: 100%;
@@ -51,10 +52,10 @@
   font-weight: 500;
 }
 .side_formule .devis_button{
-  margin-top: 12vh;
+  margin-bottom: 10px;
   margin-left: 10%;
   height: 10%;
-  width: 30%;
+  width: 6vw;
   background-color: #14213d;
   color: white;
   border-radius: 4vh 4vh 4vh 4vh;
@@ -64,9 +65,57 @@
   margin-top: 10%;
   margin-left: 10%;
   height: 10%;
-  width: 30%;
+  width: 6vw;
   background-color: #ffffff;
   color: #14213d;
   border-radius: 4vh 4vh 4vh 4vh;
   border: 2px black; 
+}
+#button1{
+  margin-top: 20%;
+}
+#button2{
+  margin-top: 10%;
+}
+@media screen and (max-width: 1900px){
+  .devis_button{
+    width: 10vw;
+    color: red;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .entrepreneur_container{
+    height: 40vh;
+  }
+  .entrepreneur_container h1{
+    font-size: 25px;
+  }
+  .entrepreneur_container ul{
+    font-size: 15px;
+  }
+  .entrepreneur_container .devis_button{
+    width: 50%;
+    height: 12%;
+  }
+}
+@media screen and (max-width: 900px){
+  .entrepreneur_container{
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .entrepreneur_container div {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 600px){
+  .entrepreneur_container{
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .entrepreneur_container div {
+    width: 80%;
+  }
 }
