@@ -25,7 +25,6 @@
   height: 100%;
   width: 30%;
   background-color: #14213d;
-  border-radius: 4vh 4vh 4vh 4vh;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   color: white;
 }
@@ -33,7 +32,6 @@
   height: 90%;
   width: 30%;
   background-color: #ffffff;
-  border-radius: 4vh 4vh 4vh 4vh;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 .entrepreneur_container h1{
@@ -55,20 +53,20 @@
   margin-bottom: 10px;
   margin-left: 10%;
   height: 10%;
-  width: 6vw;
+  width: 7vw;
   background-color: #14213d;
   color: white;
-  border-radius: 4vh 4vh 4vh 4vh;
+  border-radius: 10px;
   border: 2px black; 
 }
 .middle_formule .devis_button{
   margin-top: 10%;
   margin-left: 10%;
   height: 10%;
-  width: 6vw;
+  width: 7vw;
   background-color: #ffffff;
   color: #14213d;
-  border-radius: 4vh 4vh 4vh 4vh;
+  border-radius: 10px;
   border: 2px black; 
 }
 #button1{
@@ -77,16 +75,43 @@
 #button2{
   margin-top: 10%;
 }
+
 @media screen and (max-width: 1900px){
   .devis_button{
     width: 10vw;
     color: red;
   }
 }
+@media screen and (max-width: 1700px){
+  #button2{
+    margin-top: 2%;
+    width: 8vw;
+  }
+  #button1{
+    width: 8vw;
+  }
+  .middle_formule .devis_button{
+    width: 8vw;
+   
+  }
+}
+@media screen and (max-width: 1270px){
+  #button2{
+    margin-top: 2%;
+    width: 9vw;
+  }
+  #button1{
+    width: 9vw;
+  }
+  .middle_formule .devis_button{
+    width: 9vw;
+    margin-top: 7%;
+  }
+}
 
 @media screen and (max-width: 1100px) {
   .entrepreneur_container{
-    height: 40vh;
+    height: 48vh;
   }
   .entrepreneur_container h1{
     font-size: 25px;
@@ -94,28 +119,97 @@
   .entrepreneur_container ul{
     font-size: 15px;
   }
-  .entrepreneur_container .devis_button{
-    width: 50%;
-    height: 12%;
+  #button2{
+    margin-top: 2%;
+    width: 11vw;
+  }
+  #button1{
+    width: 11vw;
+  }
+  .middle_formule .devis_button{
+    width: 11vw;
+    margin-top: 7%;
   }
 }
 @media screen and (max-width: 900px){
   .entrepreneur_container{
-    width: 97%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
   }
   .entrepreneur_container div {
     width: 30%;
   }
+  .entrepreneur_container ul{
+    font-size: 13px;
+  }
+  #button2{
+    margin-top: 2%;
+    width: 13vw;
+  }
+  #button1{
+    width: 13vw;
+  }
+  .middle_formule .devis_button{
+    width: 13vw;
+    margin-top: 7%;
+  }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
   .entrepreneur_container{
-    width: 50vw;
+    width: 92%;
+    height: 45vh;
     display: flex;
     justify-content: space-between;
   }
+  .entrepreneur_container h1{
+    font-size: 21px;
+  }
+  #button2{
+    margin-top: 2%;
+    width: 15vw;
+  }
+  #button1{
+    width: 15vw;
+  }
+  .middle_formule .devis_button{
+    width: 15vw;
+    margin-top: 7%;
+  }
+  
+}
+@media screen and (max-width: 800px){
+  #button2{
+    margin-top: 2%;
+    width: 17vw;
+  }
+  #button1{
+    width: 17vw;
+  }
+  .middle_formule .devis_button{
+    width: 17vw;
+    margin-top: 7%;
+  }
+
+}
+@media screen and (max-width: 600px){
+  .entrepreneur_container{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .entrepreneur_container div {
     width: 80%;
+    margin-bottom: 4vh;
+  }
+  .solution_title{
+    font-size: 2.5em;
+  }
+  .entrepreneur_container h1{
+    font-size: 30px;
+  }
+  .entrepreneur_container ul{
+    font-size: 20px;
   }
 }

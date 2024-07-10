@@ -2,7 +2,7 @@ main{
     width: 100%;
 }
 .besoin{
-    margin-top: 10vh;
+    margin-top: 15vh;
     width: 80%;
     height: 100vh;
     margin-left: auto;
@@ -39,13 +39,13 @@ main{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 4vh;
+    font-size: 50px;
 
 }
 #first_one p{
     margin-top: 4%;
     color: white;
-    color: white;
+    font-size: 18px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -56,7 +56,7 @@ main{
     font-weight: 600;
     font-style: normal;
     text-align: center;
-    font-size: 3vh;
+    font-size: 30px;
 }
 .besoin .besoin_card p{
     margin-top: 10%;
@@ -67,12 +67,20 @@ main{
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.9vh;
+    font-size: 15px;
     line-height: 1.5;
 }
 @media screen and (max-width: 1550px) {
     .besoin{
         height: 90vh;
+    }
+    .besoin .besoin_card h1{
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+        font-size: 25px;
     }
     .besoin .besoin_card p{
         margin-top: 10%;
@@ -88,38 +96,17 @@ main{
         font-size: 12px;
         line-height: 1.5;
     }
-  }
-  @media screen and (max-width: 1350px) {
-    .besoin{
-        height: 80vh;
-    }
-    .besoin .besoin_card p{
-        font-size: 12px;
-        line-height: 1.5;
+    #first_one h1{
+        font-size: 40px;
+    
     }
   }
-  @media screen and (max-width: 1350px) {
-    .besoin{
-        height: 70vh;
-    }
-    .besoin .besoin_card p{
-        font-size: 12px;
-        line-height: 1.5;
-    }
-  }
+
+
   @media screen and (max-width: 1200px) {
     .besoin{
-        height: 100vh;
-    }
-    .besoin .besoin_card {
-        width: 45%;
-        height: 30%;
-    }
-  }
-  @media screen and (max-width: 1200px) {
-    .besoin{
-        height: 100vh;
-        width: 99%;
+        height: 90vh;
+        width: 65%;
     }
     .besoin .besoin_card {
         width: 45%;
@@ -128,18 +115,60 @@ main{
   }
   @media screen and (max-width: 1000px){
     .besoin{
-        margin-top: 20vh;
+        width: 85%;
+    }
+    .besoin .besoin_card h1{
+        font-size: 20px;
+      }
+      .besoin .besoin_card p{
+        font-size: 13.5px;
+        line-height: 1.6;
+    }
+    #first_one h1{
+        font-size: 30px;
+    
+    }
+    #first_one p{
+        font-size: 15px;
     }
   }
+
   @media screen and (max-width: 910px){
     .besoin{
-        margin-top: 30vh;
+        margin-top: 10vh;
+
+    }
+    .besoin .besoin_card p{
+        font-size: 12px;
+        line-height: 1.7;
     }
   }
-  @media screen and (max-width: 710px){
-    .besoin{
-        margin-top: 40vh;
+  @media screen and (max-width: 810px){
+    #first_one h1{
+        font-size: 25px;
+    
     }
+    .besoin{
+        margin-top: 30vh;
+        height: 90vh;
+    }
+    .besoin .besoin_card h1{
+        font-size: 18px;
+      }
+    .besoin .besoin_card p{
+        font-size: 11px;
+        line-height: 1.8;
+    }
+  }
+  @media screen and (max-width: 700px){
+    .besoin .besoin_card h1{
+        font-size: 15px;
+      }
+    .besoin .besoin_card p{
+        font-size: 10px;
+        line-height: 1.8;
+    }
+   
   }
   @media screen and (max-width: 600px) {
     .besoin{
@@ -151,8 +180,93 @@ main{
         width: 70%;
         height: 15%;
     }
+    .besoin .besoin_card h1{
+        font-size: 25px;
+      }
     .besoin .besoin_card p{
-        font-size: 17px;
-        line-height: 1.5;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+    #first_one h1{
+        font-size: 35px;
+    
+    }
+    #first_one p{
+        font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .besoin{
+        height: 280vh;
+    }
+    .besoin .besoin_card h1{
+        font-size: 25px;
+      }
+    .besoin .besoin_card p{
+        font-size: 13px;
+        line-height: 1.8;
+    }
+    #first_one h1{
+        font-size: 35px;
+    
+    }
+    #first_one p{
+        font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 430px){
+    .besoin{
+        height: 200vh;
+    }
+    .besoin .besoin_card h1{
+        font-size: 22px;
+      }
+    .besoin .besoin_card p{
+        font-size: 11px;
+        line-height: 1.8;
+    }
+  }
+  @media screen and (max-width: 380px){
+    .besoin{
+        height: 200vh;
+    }
+    .besoin .besoin_card h1{
+        font-size: 21px;
+      }
+    .besoin .besoin_card p{
+        font-size: 10px;
+        line-height: 1.8;
+    }
+    #first_one h1{
+        font-size: 35px;
+    
+    }
+    #first_one p{
+        font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 340px){
+    .besoin .besoin_card h1{
+        font-size: 19px;
+      }
+    .besoin .besoin_card p{
+        font-size: 9px;
+        line-height: 1.8;
+    }
+    #first_one h1{
+        font-size: 30px;
+    
+    }
+    #first_one p{
+        font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 300px){
+    .besoin .besoin_card h1{
+        font-size: 19px;
+      }
+    .besoin .besoin_card p{
+        font-size: 8px;
+        line-height: 1.8;
     }
   }

@@ -123,20 +123,16 @@ h3 {
   margin-right: auto;
   border: solid #fca311;
   margin-top: 5%;
-  text-align: left;
-  background-color: #fbfbfb;
   border-radius: 15px;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid black;
 }
 .presentation .left {
   width: 50%;
   height: 100%;
-  text-align: left;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,6 +142,7 @@ h3 {
   font-size: 30px;
   color: #14213d;
   flex-direction: column;
+  text-align: left;
 }
 .presentation .left img {
   height: 25%;
@@ -207,29 +204,32 @@ h3 {
 @media screen and (max-width: 1000px) {
   .presentation {
     height: 50vh;
+    width: 85%;
     box-shadow: none;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
+    display: flex;
     border: none;
-    display: block;
   }
   .presentation .left {
-    width: 100%;
-    height: fit-content;
+    width: 40%;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .presentation .right {
-    width: 100%;
-    text-align: left;
-    display: block;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .presentation p {
     margin-top: 2vh;
     font-size: 20px; /* Adjusted from 5px to a more reasonable size */
-    line-height: 25px;
-    margin-left: 5vw;
+    line-height: 23px;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     color: #14213d;
     /* Adjusted from 15px to maintain proportionality */
@@ -238,7 +238,7 @@ h3 {
     display: none;
   }
   #responsive_title1 {
-    display: block;
+    display: flex;
   }
 }
 @media screen and (max-width: 600px) {

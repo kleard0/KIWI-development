@@ -1,0 +1,126 @@
+
+.accompagnement {
+    display: flex;
+    height: 55vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid #fca311;
+    margin-top: 5vh;
+    text-align: left;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid black;
+  }
+  .accompagnement .left {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #14213d;
+    flex-direction: column;
+  }
+  .accompagnement .left img {
+    height: 25%;
+    width: auto;
+  }
+  .accompagnement .right {
+    width: 50%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #14213d;
+    flex-direction: column;
+  }
+
+
+  @media screen and (max-width: 1500px){
+    .accompagnement{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      justify-content: center;
+      align-items: flex-start;
+      border: none;
+    }
+    .accompagnement .left{
+      display: none;
+      width: 0vw;
+      height: 0vh;
+    }
+    .accompagnement .right{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .accompagnement .right p{
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+  
+  @media screen and (max-width: 1300px) {
+    .accompagnement p {
+      font-size: 16px; /* Adjusted from 5px to a more reasonable size */
+      line-height: 20px; /* Adjusted from 15px to maintain proportionality */
+    }
+    .accompagnement .left {
+      font-size: 25px;
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .accompagnement {
+      margin-top: 10vh;
+      height: 50vh;
+      width: 80%;
+      box-shadow: none;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      display: flex;
+      border: none;
+    }
+    .accompagnement .left {
+      display: none;
+    }
+    .accompagnement .right {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .accompagnement p {
+      margin-top: 2vh;
+      font-size: 17px; /* Adjusted from 5px to a more reasonable size */
+      line-height: 20px;
+      color: #14213d;
+      /* Adjusted from 15px to maintain proportionality */
+    }
+    #normal_title1 {
+      display: none;
+    }
+    #responsive_title1 {
+      display: flex;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    #responsive_title1 {
+      font-size: 20px;
+    }
+  }
+  
