@@ -105,7 +105,6 @@
       align-items: center;
     }
     .accompagnement p {
-      margin-top: 2vh;
       font-size: 17px; /* Adjusted from 5px to a more reasonable size */
       line-height: 20px;
       color: #14213d;
@@ -119,8 +118,12 @@
     }
   }
   @media screen and (max-width: 600px) {
-    #responsive_title1 {
-      font-size: 20px;
+    .accompagnement{
+      margin-top: 20vh;
     }
+    .accompagnement p {
+      font-size: 9px; /* Adjusted from 5px to a more reasonable size */
+      line-height: 20px;
+      color: #14213d;
   }
-  
+}
