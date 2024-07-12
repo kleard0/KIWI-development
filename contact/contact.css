@@ -241,4 +241,23 @@
   .submit {
     padding: 10px 20px;
   }
+
+  .contact_method {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 17px;
+  }
+  .contact_method .left {
+    margin-top: 17px;
+    min-width: 100%;
+    justify-content: center;
+  }
+
+  .container_contact .contact_method .left p {
+    font-size: 17px;
+    margin-left: 20%;
+  }
+  .container_contact .contact_method .right p {
+    font-size: 17px;
+  }
 }
