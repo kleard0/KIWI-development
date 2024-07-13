@@ -91,11 +91,14 @@
 .choix {
   display: flex;
   color: white;
+  justify-content: center;
+  gap: 42px;
   margin-top: 20px;
+  width: 80%;
 }
-.choix div {
+/*.choix div {
   margin-right: 10px;
-}
+}*/
 
 .submit {
   margin-top: 3%;
@@ -230,6 +233,7 @@
 @media screen and (max-width: 450px) {
   .container_contact .card {
     width: 90%;
+    height: 100%;
   }
   .message {
     width: 80%;
@@ -238,6 +242,20 @@
   .mail {
     width: 80%;
   }
+
+  .choix {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .choix div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    row-gap: 5px;
+  }
+
   .submit {
     padding: 10px 20px;
   }
