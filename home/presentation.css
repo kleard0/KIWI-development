@@ -4,28 +4,22 @@
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 8vh;
     display: flex;
   }
-  .presentation .bord{
-    background-color:  #14213d;
-    height: 70%;
-    width: 0.1%;
-    margin-right: 1vw;
-  }
   .presentation .left{
-    width: 49%;
+    width: 50%;
     height: 100%;
 
   }
   .presentation .right{
-    width: 49%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: end;
   } 
   .presentation .right img{
-    height: 70%;
+    height: 30vw;
     width: auto;
     border-radius: 15px;
   }
@@ -41,62 +35,84 @@
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 25px;
-    line-height: 30px;
-    color: black;
+    font-size: 1.5vw;
+    line-height: 1.9vw;
+    color: #14213d
   }
-
+  #realisation_button{
+    margin-top: 5vh;
+    color: white;
+    background-color: #14213d;
+    height: 8vh;
+    width: 14vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    border: none;
+    border-radius: 0.5vw;
+    margin-left: 5vw;
+  }
+  @media screen and (max-width: 850px){
+    .presentation{
+      margin-top: 5vw;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      width: 100%;
+      }
+    .presentation .left{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .presentation .right{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .presentation h1{
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 3vw;
+      line-height: 3.5vw;
+      color: #14213d;
+      text-align: center;
+    }
+    .presentation p {
+      margin-top: 5vh;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 2vw;
+      line-height: 3vw;
+      color: #14213d;
+  
+    }
+    #realisation_button{
+      margin-top: 6vh;
+      color: white;
+      background-color: #14213d;
+      height: 9vh;
+      width: 25vw;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 2vw;
+      border: none;
+      border-radius: 0.5vw;
+      margin-left: 5vw;
+    }
+    .presentation .right img{
+     display: none;
+    }
+  }
  
   
-  /*responsive*/
-  @media screen and (max-width: 1550px){
-    .presentation p {
-        font-size: 22px;
-        line-height: 30px;
-
-      }
-  }
-  @media screen and (max-width: 1360px){
-    .presentation p {
-        font-size: 21px;
-        line-height: 26px;
-
-      }
-      .presentation .bord{
-        height: 65%;
-      }
-  }
-  @media screen and (max-width: 1280px){
-    .presentation p {
-        font-size: 19px;
-        line-height: 26px;
-
-      }
-
-      .presentation .right img{
-        height: 60%;
-        width: auto;
-        border-radius: 15px;
-      }
-  }
-  @media screen and (max-width: 1150px){
-    .presentation p {
-        font-size: 17px;
-        line-height: 26px;
-      }
- 
-  }
-  @media screen and (max-width: 1050px){
-    .presentation .right img{
-        height: 55%;
-        width: auto;
-        border-radius: 15px;
-      }
-      .presentation p {
-        font-size: 16px;
-        line-height: 20px;
-      }
-  }
-  @media screen and (max-width: 970px){
-
-  }
+  

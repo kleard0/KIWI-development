@@ -89,6 +89,7 @@ main{
   }
   @media screen and (max-width: 1350px) {
     .besoin{
+        margin-top: -10vh;
         height: 80vh;
         width: 80%;
     }
@@ -105,6 +106,7 @@ main{
 
   @media screen and (max-width: 1200px) {
     .besoin{
+        margin-top: -15vh;
         height: 90vh;
         width: 70%;
 
@@ -114,8 +116,17 @@ main{
         height: 30%;
     }
   }
+  @media screen and (max-width: 1100px) {
+    .besoin{
+        margin-top: -20vh;
+        height: 90vh;
+        width: 70%;
+
+    }
+}
   @media screen and (max-width: 1000px){
     .besoin{
+        margin-top: -30vh;
         width: 85%;
     }
     .besoin .besoin_card h1{
@@ -136,7 +147,7 @@ main{
 
   @media screen and (max-width: 910px){
     .besoin{
-        margin-top: 10vh;
+        margin-top: -30vh;
 
     }
     .besoin .besoin_card p{
@@ -144,14 +155,14 @@ main{
         line-height: 1.7;
     }
   }
-  @media screen and (max-width: 810px){
+  @media screen and (max-width: 850px){
+    .besoin{
+        margin-top: -20vh;
+        height: 90vh;
+    }
     #first_one h1{
         font-size: 25px;
     
-    }
-    .besoin{
-        margin-top: 10vh;
-        height: 90vh;
     }
     .besoin .besoin_card h1{
         font-size: 18px;
@@ -162,6 +173,10 @@ main{
     }
   }
   @media screen and (max-width: 700px){
+    .besoin{
+        margin-top: -30vh;
+        height: 90vh;
+    }
     .besoin .besoin_card h1{
         font-size: 15px;
       }
@@ -173,9 +188,9 @@ main{
   }
   @media screen and (max-width: 600px) {
     .besoin{
-        margin-top: 10vh;
-        height: 330vh;
-        width: 99%;
+        margin-top: -30vh;
+        height: 250vh;
+        width: 60%;
     }
     .besoin .besoin_card {
         width: 70%;
