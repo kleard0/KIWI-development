@@ -38,6 +38,10 @@ li:hover {
 }
 
 @media screen and (max-width: 450px) {
+  footer {
+    padding-top: 25px;
+  }
+
   ul {
     display: none;
   }
@@ -46,5 +50,10 @@ li:hover {
     height: 150px;
     display: flex;
     align-items: center;
+  }
+
+  .footer_top .footer_logo img {
+    height: 160px;
+    margin-bottom: 15px;
   }
 }

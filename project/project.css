@@ -1,4 +1,8 @@
-body{
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
   background-color: #14213d;
 }
 .header_title h1 {
@@ -11,21 +15,21 @@ body{
   margin-right: auto;
 }
 
-.restaurant_reunionnais{
+.restaurant_reunionnais {
   height: 100vh;
   width: 100%;
   display: flex;
 }
-.restaurant_reunionnais section{
+.restaurant_reunionnais div {
   width: 50%;
   height: 100%;
 }
-.restaurant_reunionnais .left{
+.restaurant_reunionnais .left {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.restaurant_reunionnais .left h1{
+.restaurant_reunionnais .left h1 {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -33,22 +37,21 @@ body{
   font-size: 4em;
   margin-top: 5vh;
 }
-.restaurant_reunionnais .left img{
+.restaurant_reunionnais .left img {
   width: 50%;
   height: auto;
 }
-.restaurant_reunionnais .right{
-
+.restaurant_reunionnais .right {
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.restaurant_reunionnais .text_reunion{
+.restaurant_reunionnais .text_reunion {
   margin-left: 5%;
 }
-.restaurant_reunionnais .right h1{
+.restaurant_reunionnais .right h1 {
   color: #14213d;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -56,7 +59,7 @@ body{
   font-size: 2.5em;
   text-align: left;
 }
-.restaurant_reunionnais .right p{
+.restaurant_reunionnais .right p {
   color: #14213d;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -64,5 +67,33 @@ body{
   font-size: 1em;
   text-align: left;
   margin-top: 1vh;
+}
 
+/*responsive*/
+
+@media screen and (max-width: 450px) {
+  .restaurant_reunionnais {
+    flex-direction: column;
+    width: 100%;
+  }
+  .restaurant_reunionnais div {
+    width: 100%;
+  }
+
+  .restaurant_reunionnais .right .text_reunion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    max-height: 80%;
+  }
+
+  .restaurant_reunionnais .right p {
+    width: 80%;
+    text-align: center;
+  }
+
+  .restaurant_reunionnais .right h1 {
+    text-align: center;
+  }
 }
