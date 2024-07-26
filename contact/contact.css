@@ -259,7 +259,8 @@
     padding: 10px 20px;
   }
   .container_contact {
-    height: 90vh;
+    height: 95vh;
+    margin: 50px auto;
   }
   .contact_method {
     flex-direction: column;
@@ -278,5 +279,9 @@
   }
   .container_contact .contact_method .right p {
     font-size: 17px;
+  }
+
+  body {
+    background-color: black;
   }
 }

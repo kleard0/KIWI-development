@@ -4,6 +4,7 @@ footer {
   color: white;
   padding-top: 45px;
   width: 100%;
+  margin-top: 100px;
 }
 .footer_top {
   display: flex;
@@ -40,6 +41,7 @@ li:hover {
 @media screen and (max-width: 450px) {
   footer {
     padding-top: 25px;
+    margin-top: 200px;
   }
 
   ul {
