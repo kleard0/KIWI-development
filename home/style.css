@@ -2,7 +2,15 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  box-sizing: border-box;
 }
+/* Exemple de suppression des marges et des padding pour des éléments spécifiques */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x:  hidden;
+}
+
 body {
   background-color: white;
 }
@@ -129,7 +137,19 @@ h3 {
 #paragraphe_responsive{
   display: none;
 }
-
+.logotable{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logotable img{
+  width: 20vw;
+  height: auto;
+  border-radius: 20px;
+  background-color: red;
+}
 @media screen and (max-width: 770px) {
   .navbar li {
     font-size: 1.2em;

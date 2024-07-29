@@ -1,133 +1,219 @@
+.presentation2 {
+  height:fit-content;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8vh;
+  display: flex;
+}
+.presentation2 .right{
+  width: 50vw ;
+  height: 100%;
 
-.accompagnement {
-    display: flex;
-    height: 55vh;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border: solid #fca311;
-    margin-top: 5vh;
-    text-align: left;
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid black;
+}
+.presentation2 .left{
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+} 
+.presentation2 .left img{
+  width: 25vw;
+  height: auto;
+  border-radius: 10px;
+}
+.presentation2 h1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.3vw;
+  color: #14213d;
+}
+.presentation2 p {
+  margin-top: 5vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5vw;
+  line-height: 1.9vw;
+  color: #14213d
+}
+#realisation_button{
+  margin-top: 5vh;
+  color: white;
+  background-color: #14213d;
+  height: 8vh;
+  width: 14vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1vw;
+  border: none;
+  border-radius: 0.5vw;
+  margin-left: 5vw;
+}
+@media screen and (max-width: 850px){
+  .presentation2{
+    margin-top: 40vh;
+    height: fit-content;
+    width: 95%;
   }
-  .accompagnement .left {
-    width: 50%;
-    height: 100%;
-    text-align: left;
+}
+@media screen and (max-width: 800px){
+  .presentation2{
+    height: fit-content;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .presentation2  .right{
+    width: 60%;
+    display: flex;
     flex-direction: column;
+
   }
-  .accompagnement .left h1{
+  .presentation2 .left{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .presentation2 .left img{
+    width: 30vw;
+  }
+  .presentation2 h1{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 2.3vw;
+    font-size: 4vw;
+    line-height: 4.2vw;
     color: #14213d;
+    text-align: left;
   }
-  .accompagnement .left img {
-    height: 25%;
-    width: auto;
-  }
-  .accompagnement .right {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .accompagnement .right p{
+  .presentation2 p {
+    margin-top: 5vh;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.5vw;
-    line-height: 2vw;
-    color: #14213d
+    font-size: 2.5vw;
+    line-height: 3.5vw;
+    color: #14213d;
   }
-
-
-  @media screen and (max-width: 1500px){
-    .accompagnement{
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-      justify-content: center;
-      align-items: flex-start;
-      border: none;
+  #realisation_button{
+    display: none;
+}
+}
+@media screen and (max-width: 600px){
+  .presentation2{
+    margin-top: 0vh;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
     }
-    .accompagnement .left{
-      display: none;
-      width: 0vw;
-      height: 0vh;
-    }
-    .accompagnement .right{
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .accompagnement .right p{
-      font-size: 30px;
-      line-height: 38px;
-    }
+  .presentation2 .right{
+    margin-top: 5vh;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  
-  @media screen and (max-width: 1300px) {
-    .accompagnement p {
-      font-size: 16px; /* Adjusted from 5px to a more reasonable size */
-      line-height: 20px; /* Adjusted from 15px to maintain proportionality */
-    }
-    .accompagnement .left {
-      font-size: 25px;
-      display: none;
-    }
+  .presentation2 .left{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  @media screen and (max-width: 1000px) {
-    .accompagnement {
-      margin-top: 10vh;
-      height: 50vh;
-      width: 80%;
-      box-shadow: none;
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
-      display: flex;
-      border: none;
-    }
-    .accompagnement .left {
-      display: none;
-    }
-    .accompagnement .right {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .accompagnement p {
-      font-size: 17px; /* Adjusted from 5px to a more reasonable size */
-      line-height: 20px;
-      color: #14213d;
-      /* Adjusted from 15px to maintain proportionality */
-    }
-    #normal_title1 {
-      display: none;
-    }
-    #responsive_title1 {
-      display: flex;
-    }
+  .presentation2 h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4.5vw;
+    line-height: 4.9vw;
+    color: #14213d;
+    text-align: center;
   }
-  @media screen and (max-width: 600px) {
-    .accompagnement{
-      margin-top: 20vh;
-    }
-    .accompagnement p {
-      font-size: 9px; /* Adjusted from 5px to a more reasonable size */
-      line-height: 20px;
-      color: #14213d;
+  .presentation2 p {
+    margin-top: 5vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3vw;
+    line-height: 5vw;
+    color: #14213d;
+  }
+  .presentation2 .left img{
+    margin-top: 5vh;
+    width: 50vw;
+    height: auto;
+    border-radius: 10px;
+  }
+  #realisation_button{
+    margin-top: 6vh;
+    color: white;
+    background-color: #14213d;
+    height: 1vh;
+    width: 25vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    border: none;
+    border-radius: 0.5vw;
+    margin-left: -5vw;
   }
 }
+@media screen and (max-width: 500px){
+  .presentation2{
+    margin-top: -5vh;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    }
+  }
+  @media screen and (max-width: 450px){
+    .presentation2{
+      margin-top: -15vh;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      height: 100vh;
+      width: 100%;
+      align-items: center;
+      }
+    }
+    @media screen and (max-width: 400px){
+      .presentation2{
+        margin-top: -15vh;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        }
+      }
+      @media screen and (max-width: 360px){
+        .presentation2{
+          margin-top: -20vh;
+          flex-direction: column;
+          margin-left: auto;
+          margin-right: auto;
+          height: 100vh;
+          width: 100%;
+          align-items: center;
+          }
+        }

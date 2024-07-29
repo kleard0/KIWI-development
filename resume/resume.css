@@ -1,7 +1,7 @@
 .title {
   color: white;
   font-family: "Roboto", sans-serif;
-  font-weight: 800;
+  font-weight: 500;
   font-style: normal;
   font-size: 6vw;
   margin-top: 20vh;
@@ -41,18 +41,15 @@ section {
   justify-content: center;
 }
 
-.text-reveal {
-  width: 70%;
-  margin: 50px auto;
-  margin-bottom: 25px;
-  font-size: 22px;
-  color: black;
-  text-align: center;
-}
 
 .resume-content {
   width: 100%;
   height: 115vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1vw;
+  line-height: 1.5vw;
 }
 
 .resume-content .id {
