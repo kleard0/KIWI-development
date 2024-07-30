@@ -230,6 +230,10 @@
 }
 
 @media screen and (max-width: 450px) {
+  header {
+    margin-bottom: 30px;
+  }
+
   .container_contact .card {
     width: 90%;
     height: 100%;
@@ -260,7 +264,7 @@
   }
   .container_contact {
     height: 95vh;
-    margin: 50px auto;
+    margin: 0px auto;
   }
   .contact_method {
     flex-direction: column;

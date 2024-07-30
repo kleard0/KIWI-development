@@ -5,10 +5,11 @@
   box-sizing: border-box;
 }
 /* Exemple de suppression des marges et des padding pour des éléments spécifiques */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  overflow-x:  hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -22,6 +23,8 @@ header {
   height: 100vh;
   width: 100%;
   background-color: black;
+  display: flex;
+  flex-direction: column;
 }
 .head_bar {
   display: flex;
@@ -72,7 +75,9 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex: 1;
 }
+
 .header_title img {
   width: 70%;
   height: auto;
@@ -91,7 +96,10 @@ h3 {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  position: relative;
+  top: 25%;
 }
+
 .container-button button {
   border: none;
   border-radius: 25px;
@@ -123,28 +131,28 @@ h3 {
   /*color: rgba(255, 255, 255, 0.815);*/
   color: #fca311;
 }
- 
+
 #burger-cross {
   display: none;
 }
 #responsive_title1 {
   display: none;
 }
-#paragraphe_simple{
+#paragraphe_simple {
   display: block;
 }
 
-#paragraphe_responsive{
+#paragraphe_responsive {
   display: none;
 }
-.logotable{
+.logotable {
   width: 100%;
   height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.logotable img{
+.logotable img {
   width: 20vw;
   height: auto;
   border-radius: 20px;
@@ -164,6 +172,7 @@ h3 {
   .navbar {
     width: 70%;
   }
+
   .navbar li {
     font-size: 0.8em;
   }
@@ -171,9 +180,9 @@ h3 {
 
 @media screen and (max-width: 450px) {
   .navbar {
-    position: fixed;
-    top: -100%;
-    left: 19%;
+    position: relative;
+    top: -150%;
+    left: 2%;
     flex-direction: column;
     row-gap: 1vh;
     background-color: black;
@@ -192,6 +201,7 @@ h3 {
     width: 30px;
     transition: all 0.4s ease-in-out;
   }
+
   .header_title img {
     width: 90%;
     height: 200px;
@@ -203,9 +213,9 @@ h3 {
   }
 
   .container-button {
-    position: absolute;
-    bottom: 20px;
+    top: 23%;
   }
+
   #burger-cross::before {
     content: "\2630";
   }
@@ -219,7 +229,7 @@ h3 {
   }
 
   .head_bar.active .navbar {
-    top: 1%;
+    top: 70%;
     visibility: visible;
   }
 }
