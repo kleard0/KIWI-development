@@ -1,6 +1,5 @@
-
 .solution_title {
-  margin-top: 0vh;
+  margin-top: 15vh;
   font-size: 3vw;
   color: #14213d;
   text-align: center;
@@ -9,7 +8,6 @@
   font-style: normal;
 }
 .entrepreneur_container {
-  height: 55vh;
   width: 70vw;
   margin-top: 4vh;
   margin-bottom: 10vh;
@@ -22,14 +20,14 @@
   flex-wrap: wrap;
 }
 .middle_formule {
-  height: 100%;
+  height: 350px;
   width: 30%;
   background-color: #14213d;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   color: white;
 }
 .side_formule {
-  height: 90%;
+  height: 300px;
   width: 30%;
   background-color: #ffffff;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -116,9 +114,14 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .entrepreneur_container {
-    height: 48vh;
+  .entrepreneur_container .side_formule {
+    height: 40vh;
   }
+
+  .entrepreneur_container .middle_formule {
+    height: 43vh;
+  }
+
   .entrepreneur_container h1 {
     font-size: 25px;
   }
@@ -140,7 +143,6 @@
 @media screen and (max-width: 900px) {
   .entrepreneur_container {
     width: 80%;
-    display: flex;
     justify-content: space-between;
   }
   .entrepreneur_container div {
@@ -164,9 +166,13 @@
 @media screen and (max-width: 800px) {
   .entrepreneur_container {
     width: 92%;
-    height: 45vh;
-    display: flex;
     justify-content: space-between;
+  }
+  .entrepreneur_container .side_formule {
+    height: 45vh;
+  }
+  .entrepreneur_container .middle_formule {
+    height: 48vh;
   }
   .entrepreneur_container h1 {
     font-size: 21px;
@@ -191,6 +197,11 @@
   #button1 {
     width: 17vw;
   }
+
+  .middle_formule {
+    height: 48vh;
+  }
+
   .middle_formule .devis_button {
     width: 17vw;
     margin-top: 7%;
@@ -199,12 +210,14 @@
 @media screen and (max-width: 600px) {
   .entrepreneur_container {
     width: 80vw;
-    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .entrepreneur_container div {
     width: 80%;
+    height: 500px;
     margin-bottom: 4vh;
   }
   .solution_title {
@@ -213,7 +226,7 @@
   .entrepreneur_container h1 {
     font-size: 30px;
   }
-  .entrepreneur_container ul {
+  .entrepreneur_container ul li {
     font-size: 20px;
   }
 }

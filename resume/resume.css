@@ -41,7 +41,6 @@ section {
   justify-content: center;
 }
 
-
 .resume-content {
   width: 100%;
   height: 115vh;
@@ -54,11 +53,10 @@ section {
 
 .resume-content .id {
   display: flex;
-  height: 60vh;
+  height: 62vh;
   width: 65em;
   justify-content: space-between;
   margin-top: 10vh;
-  display: flex;
 }
 .resume-content .id h1 {
   font-family: "Roboto", sans-serif;
@@ -151,6 +149,16 @@ section {
   .resume-content h2 {
     margin-top: 30px;
   }
+
+  .resume-content .id {
+    width: 70em;
+  }
+  .id .daniel_card {
+    min-width: 33em;
+  }
+  .id .kylian_card {
+    min-width: 33em;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -162,31 +170,31 @@ section {
   }
 
   .resume-content .id {
-    width: 56em;
+    width: 95em;
   }
 
   .resume-content .id .kylian_card {
-    width: 27em;
+    width: 45em;
   }
 
   .resume-content .id .daniel_card {
-    width: 27em;
+    width: 45em;
   }
 
   .resume-content .id .daniel_card h1 {
-    font-size: 22px;
+    /* font-size: 22px;*/
   }
 
   .resume-content .id .kylian_card h1 {
-    font-size: 22px;
+    /* font-size: 22px;*/
   }
 
   .resume-content .id .kylian_card .contact p {
-    font-size: 18px;
+    /*font-size: 18px;*/
   }
 
   .resume-content .id .daniel_card .contact p {
-    font-size: 18px;
+    /* font-size: 18px;*/
   }
 
   .resume-content .id .kylian_card .info {
@@ -215,39 +223,37 @@ section {
     margin-top: 0px;
   }
   .resume-content .id {
-    width: 50em;
+    width: 95em;
   }
   .resume-content .id .kylian_card {
-    width: 24em;
-    height: 33em;
+    width: 45em;
+    height: 80em;
   }
 
   .resume-content .id .daniel_card {
-    width: 24em;
-    height: 33em;
+    width: 45em;
+    height: 80em;
   }
   .resume-content .id .daniel_card h1 {
-    font-size: 25px;
+    /*  font-size: 25px;*/
   }
 
   .resume-content .id .kylian_card h1 {
-    font-size: 25px;
+    /*font-size: 25px;*/
   }
 
   .resume-content .id .kylian_card .contact p {
-    font-size: 20px;
+    /* font-size: 20px;*/
   }
 
   .resume-content .id .daniel_card .contact p {
-    font-size: 20px;
+    /* font-size: 20px;*/
   }
 
   .resume-content .id .kylian_card .info {
-    font-size: 18px;
   }
 
   .resume-content .id .daniel_card .info {
-    font-size: 18px;
   }
 
   .resume-content .id .kylian_card .school_img {
@@ -265,41 +271,54 @@ section {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   .resume-content .id {
-    width: 50em;
+    width: 95em;
   }
+
+  .resume-content .id .head {
+    margin-top: 5%;
+  }
+
   .resume-content .id .kylian_card {
-    width: 24em;
-    height: 40em;
+    width: 45em;
+    height: 80em;
   }
 
   .resume-content .id .daniel_card {
-    width: 24em;
-    height: 40em;
+    width: 45em;
+    height: 80em;
   }
   .resume-content .id .daniel_card h1 {
     font-size: 28px;
+    margin: 5%;
   }
 
   .resume-content .id .kylian_card h1 {
     font-size: 28px;
+    margin: 5%;
   }
 
   .resume-content .id .kylian_card .contact p {
-    font-size: 23px;
+    /* font-size: 23px;*/
+    margin: 5%;
   }
 
   .resume-content .id .daniel_card .contact p {
-    font-size: 23px;
+    /*font-size: 23px;*/
+    margin: 5%;
   }
 
   .resume-content .id .kylian_card .info {
-    font-size: 21px;
+    margin: 5%;
+    height: 40%;
+    text-align: center;
   }
 
   .resume-content .id .daniel_card .info {
-    font-size: 21px;
+    margin: 5%;
+    height: 40%;
+    text-align: center;
   }
 
   .resume-content .id .daniel_card .school_img img {
@@ -309,16 +328,16 @@ section {
 
 @media screen and (max-width: 770px) {
   .resume-content .id {
-    width: 45em;
+    width: 95em;
   }
   .resume-content .id .kylian_card {
-    width: 22em;
-    height: 46em;
+    width: 45em;
+    height: 80em;
   }
 
   .resume-content .id .daniel_card {
-    width: 22em;
-    height: 46em;
+    width: 45em;
+    height: 80em;
   }
   .resume-content .id .daniel_card .school_img {
     margin-left: 1em;
@@ -334,16 +353,16 @@ section {
 
 @media screen and (max-width: 600px) {
   .resume-content .id {
-    width: 32em;
+    width: 95em;
   }
   .resume-content .id .kylian_card {
-    width: 15.5em;
-    height: 55em;
+    width: 45em;
+    height: 80em;
   }
 
   .resume-content .id .daniel_card {
-    width: 15.5em;
-    height: 55em;
+    width: 45em;
+    height: 80em;
   }
 
   .resume-content .id .daniel_card .school_img img {
@@ -357,21 +376,21 @@ section {
 @media screen and (max-width: 450px) {
   .resume-content .id {
     flex-direction: column;
-    width: 23em;
+    width: 95em;
     row-gap: 1em;
-    margin-bottom: 10em;
+    margin-bottom: 90em;
   }
 
   .resume-content .id .kylian_card {
-    width: 22em;
-    height: 40em;
+    width: 94em;
+    height: 100em;
     margin-left: auto;
     margin-right: auto;
   }
 
   .resume-content .id .daniel_card {
-    width: 22em;
-    height: 40em;
+    width: 94em;
+    height: 100em;
     margin-left: auto;
     margin-right: auto;
   }
@@ -393,19 +412,19 @@ section {
 
 @media screen and (max-width: 300px) {
   .resume-content .id {
-    width: 17em;
+    width: 95em;
   }
   .resume-content h2 {
     margin-top: 500px;
   }
   .resume-content .id .kylian_card {
-    width: 16em;
-    height: 34em;
+    width: 94em;
+    height: 94em;
   }
 
   .resume-content .id .daniel_card {
-    width: 16em;
-    height: 34em;
+    width: 94em;
+    height: 94em;
   }
   .resume-content .id .daniel_card h1 {
     font-size: 19px;
