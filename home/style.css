@@ -97,6 +97,7 @@ h3 {
   justify-content: space-around;
   position: relative;
   bottom: 0%;
+  transition: 0.4s all ease-in;
 }
 
 .container-button button {
@@ -162,6 +163,11 @@ h3 {
   height: auto;
   border-radius: 20px;
   background-color: red;
+}
+
+.warning {
+  text-align: center;
+  margin-bottom: 70px;
 }
 @media screen and (max-width: 770px) {
   .navbar li {

@@ -17,7 +17,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
     </style>
   </head>
-  <body>
+  <body onload="croissanceByDefault()">
     <header>
       <div class="head_bar" id="head_bar">
         <div class="logo_container">
@@ -39,7 +39,7 @@
           Développement Web et mobile
         </h3>
         <div class="container-button">
-          <button class="discovery">Nous découvrir</button>
+          <button class="discovery" onclick=" scrollToBesoin()">Nous découvrir</button>
          <a href="../contact/contact.html"> <button class="contact">Nous contacter</button></a>
         </div>
       </div>
@@ -64,7 +64,7 @@
                   Notre approche est flexible, motivée et créative, que ce soit <br />
                   pour des sites web ou des applications mobiles.
                 </p>
-                <button id="realisation_button">Découvrir nos réalisations</button>
+               <a href="../project/project.html"> <button id="realisation_button">Découvrir nos réalisations</button></a>
             </div>
             <div class="right">
                 <img src="kiwicomputer.jpg" alt="Kiwi Computer">
@@ -72,7 +72,7 @@
             </div>
       </div>
 
-      <div class="besoin">
+      <div class="besoin" id="besoin">
         <div id="first_one" class="besoin_card">
           <h1>Quel est votre besoin ?</h1>
           <p>Nous y apporterons une solution.</p>
@@ -150,7 +150,7 @@
       
   <h1 class="solution_title">Une formule pour chaque besoin </h1>
       <div class="entrepreneur_container">
-        <div class="side_formule">
+        <div class="side_formule" id="basicformule" onclick="chooseFormule(basicformule)">
           <h1>FORMULE BASIQUE</h1>
           <ul>
             <li>
@@ -159,10 +159,10 @@
             </li>
             <li>Logo</li>
           </ul>
-          <button id="button1" class="devis_button">Obtenir un devis</button>
+          <button id="button1" class="devis_button" onclick="obetnirUnDevis()">Obtenir un devis</button>
         </div>
 
-        <div class="middle_formule">
+        <div class="middle_formule" id="croissanceformule" onclick="chooseFormule(croissanceformule)">
           <h1>FORMULE CROISSANCE</h1>
           <ul>
             <li>Site web complet</li>
@@ -171,10 +171,10 @@
             <li>Carte visite</li>
             <li>Signature e-mail</li>
           </ul>
-          <button class="devis_button">Obtenir un devis</button>
+          <button class="devis_button" onclick="obetnirUnDevis()">Obtenir un devis</button>
         </div>
 
-        <div class="side_formule">
+        <div class="side_formule" id="expertformule" onclick="chooseFormule(expertformule)">
           <h1>FORMULE EXPERT</h1>
           <ul>
             <li>Application web avec hébergement et domaine</li>
@@ -182,9 +182,11 @@
             <li>Carte visite</li>
             <li>Signature e-mail</li>
           </ul>
-          <button id="button2" class="devis_button">Obtenir un devis</button>
+          <button id="button2" class="devis_button" onclick="obetnirUnDevis()">Obtenir un devis</button>
         </div>
       </div>
+
+      <p class="warning">* La formule croissance est séléctionné par defaut</p>
     </main>
 
     <footer>

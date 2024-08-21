@@ -32,8 +32,8 @@ svg {
 }
 
 section {
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
+  width: 100vw;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -42,43 +42,38 @@ section {
 }
 
 .resume-content {
-  width: 100%;
-  height: 115vh;
+  min-width: 100vw;
+  max-width: 1200px;
+  padding: 0 2em;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1vw;
-  line-height: 1.5vw;
+  font-size: 1rem;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.resume-content h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 2em;
 }
 
 .resume-content .id {
   display: flex;
-  height: 62vh;
-  width: 65em;
-  justify-content: space-between;
-  margin-top: 10vh;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 100px;
 }
-.resume-content .id h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-.resume-content .id .daniel_card {
-  border: solid 2px;
-  width: 31.5em;
-  display: flex;
-  flex-direction: column;
-  background: rgba(255, 255, 255, 1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-  border: 1px solid black;
-}
+
+.resume-content .id .daniel_card,
 .resume-content .id .kylian_card {
-  border: solid 2px;
-  width: 31.5em;
-  border-radius: 10px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   background: rgba(255, 255, 255, 1);
@@ -87,366 +82,101 @@ section {
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid black;
+  box-sizing: border-box;
 }
+
 .resume-content .id .head {
   display: flex;
-  flex-direction: row;
-  margin-left: 10%;
-  margin-top: 2%;
-  justify-content: space-between;
-  width: 80%;
+  align-items: center;
+  margin-bottom: 1em;
 }
-.resume-content .id .contact {
-  text-align: left;
-  margin-left: 10%;
-  margin-top: 5%;
+
+.resume-content .id .head .id_block {
+  height: 35px;
+  width: 35px;
+  background-color: #14213d;
+  margin-right: 1em;
 }
+
 .resume-content .id .contact p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
-  width: 80%;
-}
-.resume-content .id .info {
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 2%;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  font-size: 1rem;
+  margin: 0.5em 0;
 }
 
-.id_block {
-  height: 35px;
-  width: 35px;
-  background-color: #14213d;
+.resume-content .id .info {
+  font-size: 1rem;
+  margin-top: 1em;
 }
-.resume-content .id .daniel_card .school_img {
-  width: 70%;
-  height: 12%;
+
+.resume-content .id .school_img {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: space-between;
-  margin-top: 10%;
+  align-items: center;
+  margin-top: 2em;
 }
-.resume-content .id .kylian_card .school_img {
-  width: 50%;
-  height: 12%;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-between;
-  margin-top: 7%;
-}
-.school_img img {
-  height: 100%;
+
+.resume-content .id .school_img img {
+  max-height: 60px;
   width: auto;
 }
 
-@media screen and (max-width: 1950px) {
-  .resume-content h2 {
-    margin-top: 30px;
-  }
-
-  .resume-content .id {
-    width: 70em;
-  }
-  .id .daniel_card {
-    min-width: 33em;
-  }
-  .id .kylian_card {
-    min-width: 33em;
-  }
-}
-
 @media screen and (max-width: 1024px) {
-  .resume-content {
-    height: 150vh;
-  }
   .resume-content h2 {
-    margin-top: 20px;
+    font-size: 1.75em;
   }
 
-  .resume-content .id {
-    width: 95em;
-  }
-
+  .resume-content .id .daniel_card,
   .resume-content .id .kylian_card {
-    width: 45em;
-  }
-
-  .resume-content .id .daniel_card {
-    width: 45em;
-  }
-
-  .resume-content .id .daniel_card h1 {
-    /* font-size: 22px;*/
-  }
-
-  .resume-content .id .kylian_card h1 {
-    /* font-size: 22px;*/
-  }
-
-  .resume-content .id .kylian_card .contact p {
-    /*font-size: 18px;*/
-  }
-
-  .resume-content .id .daniel_card .contact p {
-    /* font-size: 18px;*/
-  }
-
-  .resume-content .id .kylian_card .info {
-    font-size: 14px;
-  }
-
-  .resume-content .id .daniel_card .info {
-    font-size: 14px;
-  }
-
-  .resume-content .id .kylian_card .school_img {
-    height: 10%;
-    margin-top: 3%;
-  }
-  .resume-content .id .daniel_card .school_img {
-    height: 10%;
-    margin-top: 3%;
+    padding: 1.5em;
   }
 }
 
-@media screen and (min-height: 1280px) {
-  .resume-content {
-    height: 100vh;
-  }
+@media screen and (max-width: 768px) {
   .resume-content h2 {
-    margin-top: 0px;
+    font-size: 1.5em;
   }
-  .resume-content .id {
-    width: 95em;
-  }
+
+  .resume-content .id .daniel_card,
   .resume-content .id .kylian_card {
-    width: 45em;
-    height: 80em;
+    padding: 1em;
+    flex: 1 1 100%;
   }
 
-  .resume-content .id .daniel_card {
-    width: 45em;
-    height: 80em;
-  }
-  .resume-content .id .daniel_card h1 {
-    /*  font-size: 25px;*/
+  .resume-content .id .contact p {
+    font-size: 0.9rem;
   }
 
-  .resume-content .id .kylian_card h1 {
-    /*font-size: 25px;*/
+  .resume-content .id .info {
+    font-size: 0.9rem;
   }
 
-  .resume-content .id .kylian_card .contact p {
-    /* font-size: 20px;*/
-  }
-
-  .resume-content .id .daniel_card .contact p {
-    /* font-size: 20px;*/
-  }
-
-  .resume-content .id .kylian_card .info {
-  }
-
-  .resume-content .id .daniel_card .info {
-  }
-
-  .resume-content .id .kylian_card .school_img {
-    width: 8em;
-    margin-left: 2.5em;
-    margin-right: 0;
-  }
-  .resume-content .id .daniel_card .school_img {
-    width: 8em;
-    margin-left: 1em;
-    margin-right: 0;
-  }
-  .resume-content .id .daniel_card .school_img img {
-    height: 80%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .resume-content .id {
-    width: 95em;
-  }
-
-  .resume-content .id .head {
-    margin-top: 5%;
-  }
-
-  .resume-content .id .kylian_card {
-    width: 45em;
-    height: 80em;
-  }
-
-  .resume-content .id .daniel_card {
-    width: 45em;
-    height: 80em;
-  }
-  .resume-content .id .daniel_card h1 {
-    font-size: 28px;
-    margin: 5%;
-  }
-
-  .resume-content .id .kylian_card h1 {
-    font-size: 28px;
-    margin: 5%;
-  }
-
-  .resume-content .id .kylian_card .contact p {
-    /* font-size: 23px;*/
-    margin: 5%;
-  }
-
-  .resume-content .id .daniel_card .contact p {
-    /*font-size: 23px;*/
-    margin: 5%;
-  }
-
-  .resume-content .id .kylian_card .info {
-    margin: 5%;
-    height: 40%;
-    text-align: center;
-  }
-
-  .resume-content .id .daniel_card .info {
-    margin: 5%;
-    height: 40%;
-    text-align: center;
-  }
-
-  .resume-content .id .daniel_card .school_img img {
-    height: 85%;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .resume-content .id {
-    width: 95em;
-  }
-  .resume-content .id .kylian_card {
-    width: 45em;
-    height: 80em;
-  }
-
-  .resume-content .id .daniel_card {
-    width: 45em;
-    height: 80em;
-  }
-  .resume-content .id .daniel_card .school_img {
-    margin-left: 1em;
-    margin-top: 3em;
-  }
-  .resume-content .id .kylian_card .school_img {
-    margin-left: 1em;
-  }
-  .resume-content .id .daniel_card .school_img img {
-    height: 75%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .resume-content .id {
-    width: 95em;
-  }
-  .resume-content .id .kylian_card {
-    width: 45em;
-    height: 80em;
-  }
-
-  .resume-content .id .daniel_card {
-    width: 45em;
-    height: 80em;
-  }
-
-  .resume-content .id .daniel_card .school_img img {
-    height: 44%;
-  }
-  .resume-content .id .kylian_card .school_img img {
-    height: 60%;
+  .resume-content .id .school_img img {
+    max-height: 50px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .resume-content .id {
-    flex-direction: column;
-    width: 95em;
-    row-gap: 1em;
-    margin-bottom: 90em;
-  }
-
-  .resume-content .id .kylian_card {
-    width: 94em;
-    height: 100em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .resume-content .id .daniel_card {
-    width: 94em;
-    height: 100em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .resume-content .id .kylian_card .info {
-    font-size: 19px;
-  }
-
-  .resume-content .id .daniel_card .info {
-    font-size: 19px;
-  }
-}
-
-@media screen and (max-width: 400px) {
   .resume-content h2 {
-    margin-top: 100px;
+    font-size: 1.25em;
   }
-}
 
-@media screen and (max-width: 300px) {
-  .resume-content .id {
-    width: 95em;
-  }
-  .resume-content h2 {
-    margin-top: 500px;
-  }
+  .resume-content .id .daniel_card,
   .resume-content .id .kylian_card {
-    width: 94em;
-    height: 94em;
+    padding: 1em;
   }
 
-  .resume-content .id .daniel_card {
-    width: 94em;
-    height: 94em;
-  }
-  .resume-content .id .daniel_card h1 {
-    font-size: 19px;
+  .resume-content .id .contact p {
+    font-size: 0.8rem;
   }
 
-  .resume-content .id .kylian_card h1 {
-    font-size: 19px;
+  .resume-content .id .info {
+    font-size: 0.8rem;
   }
 
-  .resume-content .id .kylian_card .contact p {
-    font-size: 17px;
-  }
-
-  .resume-content .id .daniel_card .contact p {
-    font-size: 17px;
-  }
-
-  .resume-content .id .kylian_card .info {
-    font-size: 15px;
-  }
-
-  .resume-content .id .daniel_card .info {
-    font-size: 15px;
+  .resume-content .id .school_img img {
+    max-height: 40px;
   }
 }
