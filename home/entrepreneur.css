@@ -94,6 +94,11 @@
   scale: 1.1;
 }
 
+.warning {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
 @media screen and (max-width: 1900px) {
   .devis_button {
     width: 10vw;
