@@ -1,29 +1,4 @@
-/*const selections = Splitting();*/
 
-/*gsap.registerPlugin(ScrollTrigger);
-
-selections.forEach((selection) => {
-  gsap.from(selection.chars, {
-    color: "white",
-    stagger: 0.05, // Temps entre le début des animations des caractères successifs
-    scrollTrigger: {
-      trigger: selection.el,
-      start: "top 97%", // Quand le haut de `selection.el` entre 97% du viewport
-      end: "bottom 100%", // Quand le bas de `selection.el` sort totalement du viewport
-    },
-    duration: 0.01, // Durée réduite de l'animation pour chaque caractère
-  });
-});*/
-
-/*const lenis = new Lenis();
-
-lenis.on("scroll", ScrollTrigger.update);
-
-gsap.ticker.add((time) => {
-  lenis.raf(time * 650);
-});
-
-gsap.ticker.lagSmoothing(0);*/
 
 //navbar burger
 
@@ -38,35 +13,7 @@ burger.addEventListener("click", () => {
   headBar.classList.toggle("active");
 });
 
-function scrollToBesoin() {
-  let besoinElement = document.getElementById("besoin");
-  let offsetBottom =
-    besoinElement.getBoundingClientRect().top + window.pageYOffset - 50;
-  let duration = 800; // Durée de l'animation en millisecondes
-  let start = window.pageYOffset;
-  let startTime =
-    "now" in window.performance ? performance.now() : new Date().getTime();
 
-  function scroll() {
-    let now =
-      "now" in window.performance ? performance.now() : new Date().getTime();
-    let time = Math.min(1, (now - startTime) / duration);
-    let timeFunction = easeInOutQuad(time);
-    window.scroll(0, Math.ceil(timeFunction * (offsetBottom - start) + start));
-
-    if (Math.abs(window.pageYOffset - offsetBottom) < 1 || time >= 1) {
-      return;
-    }
-
-    requestAnimationFrame(scroll);
-  }
-
-  function easeInOutQuad(t) {
-    return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-  }
-
-  scroll();
-}
 
 function isFormule(formule) {
   switch (formule) {
@@ -138,3 +85,5 @@ function croissanceByDefault() {
   localStorage.setItem("isExpert", false);
   console.log("Croissance is selected by default");
 }
+
+alert("We la cité la ouaiis !!")
